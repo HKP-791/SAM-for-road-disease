@@ -1,0 +1,1516 @@
+[13:38:22.280] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:38:22.281] 12 test iterations per epoch
+[14:25:20.392] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:25:20.406] 12 test iterations per epoch
+[14:27:46.453] idx 0 case case0008 mean_dice 0.670016 mean_hd95 12.856691
+[14:28:57.285] idx 1 case case0022 mean_dice 0.903744 mean_hd95 8.622885
+[14:30:17.010] idx 2 case case0038 mean_dice 0.829330 mean_hd95 5.516328
+[14:32:54.468] idx 3 case case0036 mean_dice 0.867307 mean_hd95 7.142897
+[14:34:54.827] idx 4 case case0032 mean_dice 0.877093 mean_hd95 16.099238
+[14:36:46.619] idx 5 case case0002 mean_dice 0.885717 mean_hd95 7.309586
+[14:46:48.519] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:50:13.054] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:50:14.574] 12 test iterations per epoch
+[14:52:21.665] idx 0 case case0008 mean_dice 0.670016 mean_hd95 12.856691
+[10:24:22.765] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[10:24:22.767] 12 test iterations per epoch
+[10:32:38.599] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[10:32:38.600] 12 test iterations per epoch
+[11:30:34.110] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:30:34.111] 12 test iterations per epoch
+[11:34:51.959] idx 0 case case0008 mean_dice 0.670016 mean_hd95 12.856691
+[11:37:28.255] idx 1 case case0022 mean_dice 0.903744 mean_hd95 8.622885
+[11:40:03.676] idx 2 case case0038 mean_dice 0.829330 mean_hd95 5.516328
+[11:42:39.018] idx 3 case case0036 mean_dice 0.867307 mean_hd95 7.142897
+[11:44:36.169] idx 4 case case0032 mean_dice 0.877093 mean_hd95 16.099238
+[11:46:27.065] idx 5 case case0002 mean_dice 0.885717 mean_hd95 7.309586
+[11:47:42.946] idx 6 case case0029 mean_dice 0.787968 mean_hd95 37.997890
+[11:50:29.727] idx 7 case case0003 mean_dice 0.585650 mean_hd95 101.556753
+[11:52:30.595] idx 8 case case0001 mean_dice 0.780198 mean_hd95 33.129814
+[11:54:23.741] idx 9 case case0004 mean_dice 0.825115 mean_hd95 7.650352
+[11:55:27.754] idx 10 case case0025 mean_dice 0.906980 mean_hd95 6.436437
+[11:56:30.952] idx 11 case case0035 mean_dice 0.906458 mean_hd95 3.389958
+[13:45:44.721] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:45:44.723] 12 test iterations per epoch
+[13:52:20.715] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:52:20.717] 12 test iterations per epoch
+[13:55:16.336] idx 0 case case0008 mean_dice 0.670016 mean_hd95 12.856691
+[13:58:14.322] idx 1 case case0022 mean_dice 0.903744 mean_hd95 8.622885
+[14:15:22.201] idx 2 case case0038 mean_dice 0.829330 mean_hd95 5.516328
+[14:25:22.692] idx 3 case case0036 mean_dice 0.867307 mean_hd95 7.142897
+[14:28:13.893] idx 4 case case0032 mean_dice 0.877093 mean_hd95 16.099238
+[14:31:00.488] idx 5 case case0002 mean_dice 0.885717 mean_hd95 7.309586
+[14:34:30.978] idx 6 case case0029 mean_dice 0.787968 mean_hd95 37.997890
+[14:40:04.007] idx 7 case case0003 mean_dice 0.585650 mean_hd95 101.556753
+[14:42:41.733] idx 8 case case0001 mean_dice 0.780198 mean_hd95 33.129814
+[14:44:58.217] idx 9 case case0004 mean_dice 0.825115 mean_hd95 7.650352
+[14:46:22.648] idx 10 case case0025 mean_dice 0.906980 mean_hd95 6.436437
+[14:47:42.728] idx 11 case case0035 mean_dice 0.906458 mean_hd95 3.389958
+[14:48:12.599] Mean class 1 name spleen mean_dice 0.887234 mean_hd95 14.213418
+[14:55:01.918] Mean class 2 name right kidney mean_dice 0.799501 mean_hd95 31.908405
+[14:55:35.193] Mean class 3 name left kidney mean_dice 0.804527 mean_hd95 27.434023
+[14:55:37.727] Mean class 4 name gallbladder mean_dice 0.691079 mean_hd95 39.004662
+[14:55:39.235] Mean class 5 name liver mean_dice 0.948029 mean_hd95 20.481108
+[14:55:42.792] Mean class 6 name stomach mean_dice 0.820590 mean_hd95 11.243530
+[14:55:44.817] Mean class 7 name aorta mean_dice 0.877680 mean_hd95 10.498599
+[14:55:46.465] Mean class 8 name pancreas mean_dice 0.721742 mean_hd95 10.355476
+[14:55:50.753] Testing performance in best val model: mean_dice : 0.818798 mean_hd95 : 20.642403
+[14:55:58.982] Testing Finished!
+[14:58:11.231] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:58:11.232] 12 test iterations per epoch
+[19:27:16.525] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:27:16.532] 1 test iterations per epoch
+[19:43:19.904] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:43:19.905] 1 test iterations per epoch
+[20:01:51.412] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[20:01:51.414] 1 test iterations per epoch
+[20:03:05.634] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[20:14:59.888] 1 test iterations per epoch
+[20:17:03.497] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[20:17:03.499] 1 test iterations per epoch
+[20:19:09.104] idx 0 case case0001 mean_dice 0.780198 mean_hd95 33.129814
+[20:19:35.115] Mean class 1 name crack mean_dice 0.925271 mean_hd95 3.162278
+[20:19:38.305] Mean class 2 mean_dice 0.882903 mean_hd95 33.481338
+[20:19:39.627] Mean class 3 mean_dice 0.922154 mean_hd95 11.000000
+[20:19:41.251] Mean class 4 mean_dice 0.170202 mean_hd95 132.093716
+[20:19:43.186] Mean class 5 mean_dice 0.961214 mean_hd95 58.525632
+[20:19:45.560] Mean class 6 mean_dice 0.934267 mean_hd95 15.231546
+[20:19:46.967] Mean class 7 mean_dice 0.910513 mean_hd95 3.000000
+[20:19:48.066] Mean class 8 mean_dice 0.535059 mean_hd95 8.544004
+[20:19:49.351] Testing performance in best val model: mean_dice : 0.780198 mean_hd95 : 33.129814
+[20:19:49.692] Testing Finished!
+[20:36:35.745] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[20:36:35.746] 1 test iterations per epoch
+[11:03:56.742] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:03:56.749] 1 test iterations per epoch
+[11:08:02.500] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:08:02.502] 1 test iterations per epoch
+[11:24:21.484] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:24:21.485] 1 test iterations per epoch
+[11:26:37.932] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:26:37.932] 1 test iterations per epoch
+[11:27:52.508] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:27:52.509] 1 test iterations per epoch
+[11:33:20.555] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:33:20.556] 1 test iterations per epoch
+[11:36:02.529] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:36:02.530] 1 test iterations per epoch
+[11:36:56.692] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:36:56.693] 1 test iterations per epoch
+[11:37:52.466] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:37:52.467] 1 test iterations per epoch
+[11:39:01.224] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:39:01.225] 1 test iterations per epoch
+[14:19:59.696] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:19:59.697] 1 test iterations per epoch
+[14:20:47.803] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:20:47.804] 1 test iterations per epoch
+[14:24:44.026] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:24:44.027] 1 test iterations per epoch
+[14:26:51.554] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:26:51.556] 1 test iterations per epoch
+[15:10:27.549] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[15:10:27.550] 1 test iterations per epoch
+[15:19:53.877] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[15:19:53.878] 1 test iterations per epoch
+[15:21:28.963] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[15:21:28.964] 1 test iterations per epoch
+[16:05:56.862] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[16:05:56.863] 1 test iterations per epoch
+[16:20:58.320] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[16:20:58.321] 1 test iterations per epoch
+[16:21:44.079] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[16:21:44.080] 1 test iterations per epoch
+[16:24:46.491] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[16:24:46.492] 1 test iterations per epoch
+[16:25:27.578] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[16:25:27.579] 1 test iterations per epoch
+[16:28:00.887] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints/epoch_159.pth', module='sam_lora_image_encoder', num_classes=8, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[16:28:00.888] 1 test iterations per epoch
+[17:02:00.455] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:02:00.456] 1 test iterations per epoch
+[17:02:14.985] idx 0 case crack0001 mean_dice 0.699572 mean_hd95 10.049876
+[17:02:24.820] Mean class 1 name crack mean_dice 0.699572 mean_hd95 10.049876
+[17:02:25.639] Testing performance in best val model: mean_dice : 0.699572 mean_hd95 : 10.049876
+[17:02:25.639] Testing Finished!
+[18:26:38.302] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:26:38.304] 242 test iterations per epoch
+[18:27:07.322] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:27:07.323] 242 test iterations per epoch
+[18:27:14.231] idx 0 case crack2414 mean_dice 0.438475 mean_hd95 288.369405
+[18:27:14.729] idx 1 case crack0729 mean_dice 0.601587 mean_hd95 20.013741
+[18:27:15.849] idx 2 case crack1637 mean_dice 0.607357 mean_hd95 55.164186
+[18:27:16.898] idx 3 case crack1900 mean_dice 0.000000 mean_hd95 1262.518751
+[18:27:18.923] idx 4 case crack0113 mean_dice 0.825511 mean_hd95 14.000000
+[18:27:19.437] idx 5 case crack0611 mean_dice 0.646018 mean_hd95 3.000000
+[18:27:21.370] idx 6 case crack0183 mean_dice 0.732512 mean_hd95 21.095023
+[18:27:23.202] idx 7 case crack0426 mean_dice 0.880532 mean_hd95 16.643317
+[18:27:23.725] idx 8 case crack1270 mean_dice 0.559212 mean_hd95 8.491154
+[18:27:24.811] idx 9 case crack1380 mean_dice 0.649161 mean_hd95 8.544004
+[18:27:25.378] idx 10 case crack1963 mean_dice 0.499344 mean_hd95 9.000000
+[18:27:25.933] idx 11 case crack2111 mean_dice 0.575046 mean_hd95 53.937647
+[18:27:26.447] idx 12 case crack1046 mean_dice 0.559393 mean_hd95 45.890151
+[18:27:26.962] idx 13 case crack0948 mean_dice 0.490306 mean_hd95 95.270912
+[18:27:27.474] idx 14 case crack1141 mean_dice 0.629032 mean_hd95 27.279777
+[18:27:28.042] idx 15 case crack2047 mean_dice 0.684942 mean_hd95 5.000000
+[18:27:28.575] idx 16 case crack0870 mean_dice 0.471403 mean_hd95 61.243306
+[18:27:29.103] idx 17 case crack0700 mean_dice 0.579720 mean_hd95 45.607017
+[18:27:31.116] idx 18 case crack0300 mean_dice 0.368352 mean_hd95 60.207973
+[18:27:31.786] idx 19 case crack2179 mean_dice 0.736202 mean_hd95 5.000000
+[18:27:32.296] idx 20 case crack0674 mean_dice 0.270144 mean_hd95 122.034331
+[18:27:33.359] idx 21 case crack1442 mean_dice 0.405904 mean_hd95 341.351687
+[18:27:33.896] idx 22 case crack0618 mean_dice 0.542524 mean_hd95 45.024427
+[18:27:35.044] idx 23 case crack1506 mean_dice 0.671536 mean_hd95 12.181937
+[18:27:35.614] idx 24 case crack2220 mean_dice 0.494790 mean_hd95 5.830952
+[18:27:36.151] idx 25 case crack2301 mean_dice 0.346098 mean_hd95 61.261699
+[18:27:37.907] idx 26 case crack0377 mean_dice 0.693659 mean_hd95 18.384776
+[18:27:38.439] idx 27 case crack1944 mean_dice 0.573526 mean_hd95 10.000000
+[18:27:38.987] idx 28 case crack0686 mean_dice 0.524759 mean_hd95 29.017236
+[18:27:39.508] idx 29 case crack0533 mean_dice 0.724113 mean_hd95 3.000000
+[18:27:40.031] idx 30 case crack0650 mean_dice 0.610647 mean_hd95 25.945035
+[18:27:40.557] idx 31 case crack2199 mean_dice 0.662429 mean_hd95 3.625274
+[18:27:41.067] idx 32 case crack0871 mean_dice 0.585739 mean_hd95 162.587781
+[18:27:42.141] idx 33 case crack1796 mean_dice 0.370660 mean_hd95 293.222099
+[18:27:42.757] idx 34 case crack2108 mean_dice 0.616336 mean_hd95 8.062258
+[18:27:44.715] idx 35 case crack0102 mean_dice 0.628954 mean_hd95 123.166554
+[18:27:45.228] idx 36 case crack0977 mean_dice 0.493772 mean_hd95 55.032716
+[18:27:46.318] idx 37 case crack1395 mean_dice 0.440860 mean_hd95 22.360680
+[18:27:46.861] idx 38 case crack1018 mean_dice 0.407546 mean_hd95 87.009142
+[18:27:47.394] idx 39 case crack1222 mean_dice 0.656860 mean_hd95 2.828427
+[18:27:49.345] idx 40 case crack0056 mean_dice 0.761266 mean_hd95 23.259407
+[18:27:50.498] idx 41 case crack1353 mean_dice 0.466490 mean_hd95 51.257191
+[18:27:51.895] idx 42 case crack1698 mean_dice 0.583296 mean_hd95 6.324555
+[18:27:53.500] idx 43 case crack0205 mean_dice 0.866550 mean_hd95 14.000000
+[18:27:54.632] idx 44 case crack1889 mean_dice 0.525217 mean_hd95 260.317114
+[18:27:55.192] idx 45 case crack0694 mean_dice 0.559222 mean_hd95 22.203603
+[18:27:55.729] idx 46 case crack2132 mean_dice 0.458537 mean_hd95 18.261936
+[18:27:57.435] idx 47 case crack0026 mean_dice 0.361161 mean_hd95 105.053314
+[18:27:59.401] idx 48 case crack0251 mean_dice 0.761296 mean_hd95 36.309685
+[18:28:00.417] idx 49 case crack1496 mean_dice 0.402385 mean_hd95 1095.597873
+[18:28:00.957] idx 50 case crack1154 mean_dice 0.658471 mean_hd95 5.000000
+[18:28:01.486] idx 51 case crack1085 mean_dice 0.632514 mean_hd95 69.998423
+[18:28:02.046] idx 52 case crack2343 mean_dice 0.510841 mean_hd95 54.097799
+[18:28:02.904] idx 53 case crack1847 mean_dice 0.000000 mean_hd95 0.000000
+[18:28:03.446] idx 54 case crack0796 mean_dice 0.609328 mean_hd95 111.190794
+[18:28:03.998] idx 55 case crack0745 mean_dice 0.735301 mean_hd95 2.000000
+[18:28:04.535] idx 56 case crack0884 mean_dice 0.664269 mean_hd95 4.123106
+[18:28:06.184] idx 57 case crack0071 mean_dice 0.700912 mean_hd95 16.000000
+[18:28:06.952] idx 58 case crack0755 mean_dice 0.491732 mean_hd95 69.000000
+[18:28:07.448] idx 59 case crack0506 mean_dice 0.561738 mean_hd95 39.248674
+[18:28:07.947] idx 60 case crack1939 mean_dice 0.490566 mean_hd95 12.649111
+[18:28:09.780] idx 61 case crack0226 mean_dice 0.758014 mean_hd95 44.093646
+[18:28:10.934] idx 62 case crack1801 mean_dice 0.455698 mean_hd95 135.388683
+[18:28:11.520] idx 63 case crack0635 mean_dice 0.417361 mean_hd95 52.009614
+[18:28:12.054] idx 64 case crack2323 mean_dice 0.761589 mean_hd95 3.605551
+[18:28:12.611] idx 65 case crack2112 mean_dice 0.572329 mean_hd95 14.190853
+[18:28:13.685] idx 66 case crack1802 mean_dice 0.496777 mean_hd95 6.000000
+[18:28:14.375] idx 67 case crack0673 mean_dice 0.012090 mean_hd95 338.943347
+[18:28:14.873] idx 68 case crack1193 mean_dice 0.612318 mean_hd95 5.830952
+[18:28:15.364] idx 69 case crack0838 mean_dice 0.674071 mean_hd95 5.000000
+[18:28:15.904] idx 70 case crack2410 mean_dice 0.593367 mean_hd95 361.000000
+[18:28:16.422] idx 71 case crack1149 mean_dice 0.580711 mean_hd95 133.540175
+[18:28:16.952] idx 72 case crack1227 mean_dice 0.554161 mean_hd95 170.915985
+[18:28:17.521] idx 73 case crack2147 mean_dice 0.627808 mean_hd95 9.899495
+[18:28:18.039] idx 74 case crack0651 mean_dice 0.517874 mean_hd95 71.583866
+[18:28:19.093] idx 75 case crack1738 mean_dice 0.422332 mean_hd95 229.424686
+[18:28:20.172] idx 76 case crack1749 mean_dice 0.396801 mean_hd95 491.039497
+[18:28:21.309] idx 77 case crack1340 mean_dice 0.564848 mean_hd95 290.000000
+[18:28:21.832] idx 78 case crack2227 mean_dice 0.614244 mean_hd95 29.301826
+[18:28:22.330] idx 79 case crack2364 mean_dice 0.483022 mean_hd95 267.680522
+[18:28:23.999] idx 80 case crack0348 mean_dice 0.718296 mean_hd95 150.378128
+[18:28:24.585] idx 81 case crack1211 mean_dice 0.572438 mean_hd95 3.000000
+[18:28:25.700] idx 82 case crack1617 mean_dice 0.000000 mean_hd95 428.786647
+[18:28:26.893] idx 83 case crack1543 mean_dice 0.875420 mean_hd95 241.044495
+[18:28:27.957] idx 84 case crack1735 mean_dice 0.188163 mean_hd95 278.701632
+[18:28:28.518] idx 85 case crack2218 mean_dice 0.482656 mean_hd95 6.000000
+[18:28:29.577] idx 86 case crack1387 mean_dice 0.502678 mean_hd95 97.915003
+[18:28:30.141] idx 87 case crack2380 mean_dice 0.538607 mean_hd95 14.979910
+[18:28:30.677] idx 88 case crack0574 mean_dice 0.549527 mean_hd95 247.686943
+[18:28:31.880] idx 89 case crack1489 mean_dice 0.456178 mean_hd95 371.796988
+[18:28:32.426] idx 90 case crack2411 mean_dice 0.553312 mean_hd95 94.802780
+[18:28:32.911] idx 91 case crack0615 mean_dice 0.609692 mean_hd95 3.605551
+[18:28:33.425] idx 92 case crack0795 mean_dice 0.477695 mean_hd95 46.471191
+[18:28:33.939] idx 93 case crack2032 mean_dice 0.428119 mean_hd95 168.966598
+[18:28:34.470] idx 94 case crack0602 mean_dice 0.669402 mean_hd95 6.082763
+[18:28:34.980] idx 95 case crack1087 mean_dice 0.606858 mean_hd95 69.581678
+[18:28:36.566] idx 96 case crack0208 mean_dice 0.858019 mean_hd95 13.000000
+[18:28:37.152] idx 97 case crack1253 mean_dice 0.541973 mean_hd95 145.572399
+[18:28:37.750] idx 98 case crack2401 mean_dice 0.423099 mean_hd95 182.463695
+[18:28:38.809] idx 99 case crack1352 mean_dice 0.000000 mean_hd95 1103.048941
+[18:28:40.045] idx 100 case crack1357 mean_dice 0.000000 mean_hd95 1182.882200
+[18:28:41.114] idx 101 case crack1919 mean_dice 0.648175 mean_hd95 16.752549
+[18:28:41.679] idx 102 case crack0896 mean_dice 0.577834 mean_hd95 41.021938
+[18:28:42.767] idx 103 case crack1645 mean_dice 0.256986 mean_hd95 823.363499
+[18:28:44.836] idx 104 case crack0111 mean_dice 0.791430 mean_hd95 18.000000
+[18:28:45.332] idx 105 case crack2056 mean_dice 0.702387 mean_hd95 4.000000
+[18:28:46.417] idx 106 case crack1695 mean_dice 0.465460 mean_hd95 321.000000
+[18:28:47.479] idx 107 case crack1619 mean_dice 0.638780 mean_hd95 25.495098
+[18:28:48.108] idx 108 case crack1109 mean_dice 0.674483 mean_hd95 3.000000
+[18:28:48.691] idx 109 case crack2315 mean_dice 0.588874 mean_hd95 18.536070
+[18:28:49.783] idx 110 case crack1784 mean_dice 0.665404 mean_hd95 292.310020
+[18:28:50.312] idx 111 case crack1057 mean_dice 0.523256 mean_hd95 221.271665
+[18:28:50.841] idx 112 case crack1224 mean_dice 0.682343 mean_hd95 2.828427
+[18:28:52.599] idx 113 case crack0317 mean_dice 0.608067 mean_hd95 15.620499
+[18:28:53.132] idx 114 case crack1166 mean_dice 0.585393 mean_hd95 18.027756
+[18:28:53.626] idx 115 case crack2117 mean_dice 0.257634 mean_hd95 115.161624
+[18:28:54.707] idx 116 case crack1421 mean_dice 0.252563 mean_hd95 413.624883
+[18:28:55.886] idx 117 case crack1580 mean_dice 0.439960 mean_hd95 364.703709
+[18:28:56.478] idx 118 case crack2274 mean_dice 0.662186 mean_hd95 29.527719
+[18:28:56.998] idx 119 case crack2159 mean_dice 0.603952 mean_hd95 35.080312
+[18:28:58.040] idx 120 case crack1651 mean_dice 0.348736 mean_hd95 294.024869
+[18:28:58.599] idx 121 case crack1288 mean_dice 0.647217 mean_hd95 3.605551
+[18:28:59.174] idx 122 case crack0767 mean_dice 0.474510 mean_hd95 120.606035
+[18:29:00.317] idx 123 case crack1709 mean_dice 0.431212 mean_hd95 197.699861
+[18:29:01.416] idx 124 case crack1373 mean_dice 0.000000 mean_hd95 0.000000
+[18:29:01.910] idx 125 case crack2090 mean_dice 0.432765 mean_hd95 17.117243
+[18:29:02.408] idx 126 case crack1022 mean_dice 0.575318 mean_hd95 8.544004
+[18:29:02.895] idx 127 case crack1271 mean_dice 0.543316 mean_hd95 95.311306
+[18:29:04.051] idx 128 case crack1785 mean_dice 0.575412 mean_hd95 321.851934
+[18:29:05.114] idx 129 case crack1908 mean_dice 0.000000 mean_hd95 1483.569255
+[18:29:06.999] idx 130 case crack0304 mean_dice 0.523682 mean_hd95 157.883660
+[18:29:07.488] idx 131 case crack0530 mean_dice 0.540965 mean_hd95 53.535845
+[18:29:09.382] idx 132 case crack0357 mean_dice 0.741111 mean_hd95 27.000000
+[18:29:11.167] idx 133 case crack0158 mean_dice 0.774268 mean_hd95 17.464249
+[18:29:11.966] idx 134 case crack0645 mean_dice 0.702205 mean_hd95 3.000000
+[18:29:12.981] idx 135 case crack1561 mean_dice 0.000000 mean_hd95 1314.613639
+[18:29:15.153] idx 136 case crack0298 mean_dice 0.815249 mean_hd95 9.219544
+[18:29:15.756] idx 137 case crack2009 mean_dice 0.781176 mean_hd95 2.000000
+[18:29:16.325] idx 138 case crack0672 mean_dice 0.524729 mean_hd95 48.498366
+[18:29:16.883] idx 139 case crack2294 mean_dice 0.775423 mean_hd95 239.208861
+[18:29:17.414] idx 140 case crack0717 mean_dice 0.565670 mean_hd95 25.941984
+[18:29:17.932] idx 141 case crack0740 mean_dice 0.609448 mean_hd95 77.011666
+[18:29:18.458] idx 142 case crack0541 mean_dice 0.541899 mean_hd95 18.027756
+[18:29:18.972] idx 143 case crack0934 mean_dice 0.579622 mean_hd95 16.303300
+[18:29:20.892] idx 144 case crack0392 mean_dice 0.829670 mean_hd95 22.000000
+[18:29:21.385] idx 145 case crack2183 mean_dice 0.683474 mean_hd95 19.909545
+[18:29:23.273] idx 146 case crack0172 mean_dice 0.681851 mean_hd95 16.000000
+[18:29:25.024] idx 147 case crack0099 mean_dice 0.629045 mean_hd95 541.361010
+[18:29:25.753] idx 148 case crack2260 mean_dice 0.507834 mean_hd95 187.708867
+[18:29:26.243] idx 149 case crack1246 mean_dice 0.485450 mean_hd95 321.510705
+[18:29:26.742] idx 150 case crack0525 mean_dice 0.595316 mean_hd95 6.387410
+[18:29:27.271] idx 151 case crack2038 mean_dice 0.570139 mean_hd95 119.531369
+[18:29:28.332] idx 152 case crack1365 mean_dice 0.000000 mean_hd95 894.290780
+[18:29:28.887] idx 153 case crack2194 mean_dice 0.748518 mean_hd95 4.000000
+[18:29:29.432] idx 154 case crack0577 mean_dice 0.586851 mean_hd95 10.049876
+[18:29:30.519] idx 155 case crack1372 mean_dice 0.516034 mean_hd95 434.951610
+[18:29:31.067] idx 156 case crack1969 mean_dice 0.326651 mean_hd95 99.898406
+[18:29:32.956] idx 157 case crack0313 mean_dice 0.637588 mean_hd95 88.175061
+[18:29:33.533] idx 158 case crack2160 mean_dice 0.551601 mean_hd95 23.769729
+[18:29:34.411] idx 159 case crack1498 mean_dice 0.000000 mean_hd95 0.000000
+[18:29:34.976] idx 160 case crack1286 mean_dice 0.646319 mean_hd95 4.000000
+[18:29:36.720] idx 161 case crack0047 mean_dice 0.549100 mean_hd95 17.888544
+[18:29:37.310] idx 162 case crack2336 mean_dice 0.635887 mean_hd95 4.000000
+[18:29:37.832] idx 163 case crack0682 mean_dice 0.596022 mean_hd95 13.971138
+[18:29:38.893] idx 164 case crack1462 mean_dice 0.134366 mean_hd95 394.608413
+[18:29:40.114] idx 165 case crack1446 mean_dice 0.686321 mean_hd95 24.186773
+[18:29:40.627] idx 166 case crack0814 mean_dice 0.450434 mean_hd95 86.005814
+[18:29:41.157] idx 167 case crack2360 mean_dice 0.115092 mean_hd95 126.197463
+[18:29:43.023] idx 168 case crack0365 mean_dice 0.716021 mean_hd95 13.000000
+[18:29:43.756] idx 169 case crack2322 mean_dice 0.713300 mean_hd95 4.000000
+[18:29:44.870] idx 170 case crack1459 mean_dice 0.659453 mean_hd95 574.000000
+[18:29:45.358] idx 171 case crack1089 mean_dice 0.626764 mean_hd95 4.000000
+[18:29:46.489] idx 172 case crack1611 mean_dice 0.546420 mean_hd95 99.018129
+[18:29:47.593] idx 173 case crack1335 mean_dice 0.553372 mean_hd95 15.264338
+[18:29:48.136] idx 174 case crack1023 mean_dice 0.597430 mean_hd95 5.000000
+[18:29:49.289] idx 175 case crack1795 mean_dice 0.555415 mean_hd95 9.000000
+[18:29:51.106] idx 176 case crack0371 mean_dice 0.436047 mean_hd95 64.124878
+[18:29:52.711] idx 177 case crack0108 mean_dice 0.739253 mean_hd95 32.649655
+[18:29:53.351] idx 178 case crack2428 mean_dice 0.639843 mean_hd95 6.761250
+[18:29:53.874] idx 179 case crack1292 mean_dice 0.760393 mean_hd95 2.000000
+[18:29:55.706] idx 180 case crack0169 mean_dice 0.744905 mean_hd95 21.213203
+[18:29:56.242] idx 181 case crack2044 mean_dice 0.635379 mean_hd95 18.931096
+[18:29:56.752] idx 182 case crack0608 mean_dice 0.642313 mean_hd95 132.024606
+[18:29:57.260] idx 183 case crack0905 mean_dice 0.276096 mean_hd95 325.694019
+[18:29:57.765] idx 184 case crack0920 mean_dice 0.635945 mean_hd95 45.393077
+[18:29:58.290] idx 185 case crack2129 mean_dice 0.644212 mean_hd95 87.031014
+[18:29:58.842] idx 186 case crack2305 mean_dice 0.499495 mean_hd95 48.010416
+[18:29:59.360] idx 187 case crack0593 mean_dice 0.580597 mean_hd95 130.601866
+[18:30:00.446] idx 188 case crack1824 mean_dice 0.565542 mean_hd95 131.713525
+[18:30:01.649] idx 189 case crack1702 mean_dice 0.487692 mean_hd95 64.617557
+[18:30:02.352] idx 190 case crack0741 mean_dice 0.554232 mean_hd95 195.630758
+[18:30:02.836] idx 191 case crack0953 mean_dice 0.634885 mean_hd95 20.070478
+[18:30:03.320] idx 192 case crack2136 mean_dice 0.630548 mean_hd95 70.960400
+[18:30:03.851] idx 193 case crack2238 mean_dice 0.435849 mean_hd95 154.280954
+[18:30:04.355] idx 194 case crack0627 mean_dice 0.673320 mean_hd95 2.828427
+[18:30:04.869] idx 195 case crack1215 mean_dice 0.546650 mean_hd95 26.351114
+[18:30:05.382] idx 196 case crack0943 mean_dice 0.066524 mean_hd95 145.019307
+[18:30:05.909] idx 197 case crack1309 mean_dice 0.668607 mean_hd95 3.000000
+[18:30:07.674] idx 198 case crack0027 mean_dice 0.385409 mean_hd95 38.078866
+[18:30:08.339] idx 199 case crack2372 mean_dice 0.768309 mean_hd95 52.578930
+[18:30:08.847] idx 200 case crack1029 mean_dice 0.542525 mean_hd95 187.119735
+[18:30:09.331] idx 201 case crack0603 mean_dice 0.590063 mean_hd95 71.246740
+[18:30:10.467] idx 202 case crack1924 mean_dice 0.579635 mean_hd95 9.848858
+[18:30:11.025] idx 203 case crack0527 mean_dice 0.579428 mean_hd95 8.944272
+[18:30:11.575] idx 204 case crack2173 mean_dice 0.517623 mean_hd95 48.655660
+[18:30:12.097] idx 205 case crack0923 mean_dice 0.466300 mean_hd95 219.188045
+[18:30:13.176] idx 206 case crack1800 mean_dice 0.481555 mean_hd95 445.693448
+[18:30:13.696] idx 207 case crack0529 mean_dice 0.611189 mean_hd95 61.684682
+[18:30:14.225] idx 208 case crack2397 mean_dice 0.538885 mean_hd95 103.949478
+[18:30:15.820] idx 209 case crack0105 mean_dice 0.601061 mean_hd95 168.755488
+[18:30:16.349] idx 210 case crack0770 mean_dice 0.422679 mean_hd95 35.846897
+[18:30:17.717] idx 211 case crack1588 mean_dice 0.571737 mean_hd95 284.195353
+[18:30:18.783] idx 212 case crack1559 mean_dice 0.555315 mean_hd95 28.539284
+[18:30:22.359] idx 213 case crack0478 mean_dice 0.669181 mean_hd95 119.087781
+[18:30:23.143] idx 214 case crack2076 mean_dice 0.270387 mean_hd95 128.811878
+[18:30:24.262] idx 215 case crack1904 mean_dice 0.440164 mean_hd95 402.135542
+[18:30:25.347] idx 216 case crack1669 mean_dice 0.000000 mean_hd95 335.017910
+[18:30:27.163] idx 217 case crack0423 mean_dice 0.748004 mean_hd95 44.407770
+[18:30:30.634] idx 218 case crack0471 mean_dice 0.746381 mean_hd95 36.055513
+[18:30:31.283] idx 219 case crack0668 mean_dice 0.675145 mean_hd95 4.030776
+[18:30:31.808] idx 220 case crack1080 mean_dice 0.597134 mean_hd95 31.000000
+[18:30:32.291] idx 221 case crack1207 mean_dice 0.674378 mean_hd95 2.828427
+[18:30:34.074] idx 222 case crack0187 mean_dice 0.760249 mean_hd95 19.209373
+[18:30:34.673] idx 223 case crack0873 mean_dice 0.618743 mean_hd95 31.984872
+[18:30:35.192] idx 224 case crack0835 mean_dice 0.737834 mean_hd95 2.236068
+[18:30:35.681] idx 225 case crack0697 mean_dice 0.480930 mean_hd95 45.039980
+[18:30:36.712] idx 226 case crack1649 mean_dice 0.528630 mean_hd95 225.000000
+[18:30:37.251] idx 227 case crack0640 mean_dice 0.591644 mean_hd95 20.402188
+[18:30:37.777] idx 228 case crack1272 mean_dice 0.595448 mean_hd95 29.415981
+[18:30:38.300] idx 229 case crack0956 mean_dice 0.550285 mean_hd95 166.883327
+[18:30:38.875] idx 230 case crack2424 mean_dice 0.556534 mean_hd95 20.000000
+[18:30:39.389] idx 231 case crack0616 mean_dice 0.681113 mean_hd95 4.242641
+[18:30:39.907] idx 232 case crack0932 mean_dice 0.636612 mean_hd95 16.124515
+[18:30:41.605] idx 233 case crack0149 mean_dice 0.781318 mean_hd95 15.652476
+[18:30:43.615] idx 234 case crack0163 mean_dice 0.771356 mean_hd95 26.000000
+[18:30:44.115] idx 235 case crack0733 mean_dice 0.683223 mean_hd95 10.440307
+[18:30:45.950] idx 236 case crack0393 mean_dice 0.822417 mean_hd95 30.000000
+[18:30:46.489] idx 237 case crack1157 mean_dice 0.525624 mean_hd95 68.250545
+[18:30:47.342] idx 238 case crack1434 mean_dice 0.000000 mean_hd95 0.000000
+[18:30:47.895] idx 239 case crack2210 mean_dice 0.612735 mean_hd95 28.335313
+[18:30:48.424] idx 240 case crack0620 mean_dice 0.583563 mean_hd95 14.610645
+[18:30:48.939] idx 241 case crack1297 mean_dice 0.600623 mean_hd95 10.664184
+[18:30:49.862] Mean class 1 name crack mean_dice 0.546009 mean_hd95 123.828360
+[18:30:49.863] Testing performance in best val model: mean_dice : 0.546009 mean_hd95 : 123.828360
+[18:30:49.863] Testing Finished!
+[13:35:15.109] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:35:15.112] 437 test iterations per epoch
+[13:35:58.897] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:35:58.899] 437 test iterations per epoch
+[13:43:38.785] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:43:38.787] 437 test iterations per epoch
+[13:44:07.119] idx 0 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[14:01:23.885] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:01:23.886] 438 test iterations per epoch
+[14:01:33.295] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[14:01:40.545] idx 1 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[14:05:39.443] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:05:39.444] 440 test iterations per epoch
+[14:05:45.031] idx 0 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[14:05:45.235] idx 1 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[14:05:45.451] idx 2 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[14:05:45.643] idx 3 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[14:51:04.053] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:51:04.054] 440 test iterations per epoch
+[14:53:08.736] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:53:08.737] 440 test iterations per epoch
+[14:53:17.698] idx 0 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[14:53:20.916] idx 1 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[14:53:21.903] idx 2 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[14:53:22.626] idx 3 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[14:55:15.135] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[14:55:15.136] 441 test iterations per epoch
+[14:55:20.474] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[14:55:20.652] idx 1 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[14:55:20.835] idx 2 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[14:55:21.032] idx 3 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[14:55:21.226] idx 4 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[15:03:32.562] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[15:03:32.563] 441 test iterations per epoch
+[15:03:38.015] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[15:03:38.191] idx 1 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[15:03:38.376] idx 2 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[15:03:38.578] idx 3 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[15:03:38.767] idx 4 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[15:21:24.816] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[15:21:24.817] 441 test iterations per epoch
+[15:21:30.359] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[15:21:30.536] idx 1 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[15:21:30.728] idx 2 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[15:21:30.935] idx 3 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[15:21:31.128] idx 4 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[15:45:44.877] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[15:45:44.878] 441 test iterations per epoch
+[15:45:53.666] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[15:45:53.844] idx 1 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[15:45:54.028] idx 2 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[15:45:54.237] idx 3 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[15:45:54.444] idx 4 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[21:43:53.042] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:43:53.044] 441 test iterations per epoch
+[21:47:51.681] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:47:51.682] 441 test iterations per epoch
+[21:51:00.611] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:51:00.612] 441 test iterations per epoch
+[21:52:10.325] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:52:10.326] 441 test iterations per epoch
+[21:54:10.990] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:54:10.992] 441 test iterations per epoch
+[22:04:20.337] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[22:04:20.338] 441 test iterations per epoch
+[22:20:46.551] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[22:20:46.552] 441 test iterations per epoch
+[22:22:05.321] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[22:22:05.322] 441 test iterations per epoch
+[22:23:13.728] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[22:23:13.729] 441 test iterations per epoch
+[22:29:21.572] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[22:29:21.573] 441 test iterations per epoch
+[17:29:56.029] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:29:56.031] 441 test iterations per epoch
+[17:31:03.230] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:31:03.232] 441 test iterations per epoch
+[17:31:28.760] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:31:28.802] 441 test iterations per epoch
+[17:31:31.911] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[17:33:14.624] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:33:14.624] 441 test iterations per epoch
+[17:33:17.699] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[17:33:17.874] idx 1 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[17:33:18.064] idx 2 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[17:33:18.258] idx 3 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[17:33:18.451] idx 4 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[17:37:09.726] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:37:09.727] 441 test iterations per epoch
+[17:37:15.339] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[17:37:15.524] idx 1 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[17:37:15.717] idx 2 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[17:37:15.923] idx 3 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[17:37:16.108] idx 4 case crack4283 mean_dice 0.067258 mean_hd95 147.354667
+[17:49:53.080] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:49:53.086] 830 test iterations per epoch
+[17:50:00.327] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[17:50:00.545] idx 1 case crack0003 mean_dice 0.105772 mean_hd95 39.924930
+[17:50:00.712] idx 2 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[17:50:00.889] idx 3 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[17:50:01.094] idx 4 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[17:50:01.301] idx 5 case crack0025 mean_dice 0.169800 mean_hd95 23.367693
+[17:50:01.477] idx 6 case crack0028 mean_dice 0.120961 mean_hd95 31.953091
+[17:50:01.635] idx 7 case crack0034 mean_dice 0.071384 mean_hd95 268.710798
+[17:50:01.867] idx 8 case crack0037 mean_dice 0.077814 mean_hd95 43.453419
+[17:50:02.028] idx 9 case crack0042 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:02.197] idx 10 case crack0058 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:02.349] idx 11 case crack0072 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:02.550] idx 12 case crack0075 mean_dice 0.109406 mean_hd95 328.377202
+[17:50:02.761] idx 13 case crack0083 mean_dice 0.093089 mean_hd95 104.221933
+[17:50:03.003] idx 14 case crack0087 mean_dice 0.035336 mean_hd95 152.400000
+[17:50:03.190] idx 15 case crack0092 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:03.397] idx 16 case crack0101 mean_dice 0.161265 mean_hd95 117.001282
+[17:50:03.602] idx 17 case crack0102 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:03.878] idx 18 case crack0110 mean_dice 0.082448 mean_hd95 80.000000
+[17:50:04.060] idx 19 case crack0112 mean_dice 0.002415 mean_hd95 99.632575
+[17:50:04.274] idx 20 case crack0115 mean_dice 0.050306 mean_hd95 43.000000
+[17:50:04.410] idx 21 case crack0116 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:04.576] idx 22 case crack0123 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:04.766] idx 23 case crack0139 mean_dice 0.108327 mean_hd95 31.000000
+[17:50:04.961] idx 24 case crack0140 mean_dice 0.149219 mean_hd95 40.199502
+[17:50:05.146] idx 25 case crack0141 mean_dice 0.076469 mean_hd95 224.225227
+[17:50:05.340] idx 26 case crack0144 mean_dice 0.057098 mean_hd95 197.323931
+[17:50:05.559] idx 27 case crack0146 mean_dice 0.201027 mean_hd95 26.442335
+[17:50:05.705] idx 28 case crack0147 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:05.858] idx 29 case crack0156 mean_dice 0.089817 mean_hd95 64.035124
+[17:50:06.083] idx 30 case crack0172 mean_dice 0.032253 mean_hd95 64.000000
+[17:50:06.258] idx 31 case crack0173 mean_dice 0.021481 mean_hd95 146.389877
+[17:50:06.398] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 241.050928
+[17:50:06.600] idx 33 case crack0195 mean_dice 0.097177 mean_hd95 41.109610
+[17:50:06.755] idx 34 case crack0201 mean_dice 0.100575 mean_hd95 149.529900
+[17:50:06.920] idx 35 case crack0207 mean_dice 0.012223 mean_hd95 108.403412
+[17:50:07.109] idx 36 case crack0210 mean_dice 0.119787 mean_hd95 28.635642
+[17:50:07.276] idx 37 case crack0213 mean_dice 0.026345 mean_hd95 55.465304
+[17:50:07.434] idx 38 case crack0215 mean_dice 0.023653 mean_hd95 123.063145
+[17:50:07.604] idx 39 case crack0218 mean_dice 0.037331 mean_hd95 77.000000
+[17:50:07.746] idx 40 case crack0220 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:07.934] idx 41 case crack0239 mean_dice 0.139530 mean_hd95 257.000000
+[17:50:08.078] idx 42 case crack0241 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:08.274] idx 43 case crack0246 mean_dice 0.019665 mean_hd95 244.198264
+[17:50:08.458] idx 44 case crack0258 mean_dice 0.028085 mean_hd95 127.592122
+[17:50:08.645] idx 45 case crack0259 mean_dice 0.013883 mean_hd95 153.300000
+[17:50:08.797] idx 46 case crack0264 mean_dice 0.041790 mean_hd95 102.650000
+[17:50:08.943] idx 47 case crack0267 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:09.127] idx 48 case crack0273 mean_dice 0.050989 mean_hd95 26.925824
+[17:50:09.272] idx 49 case crack0277 mean_dice 0.037327 mean_hd95 195.197846
+[17:50:09.431] idx 50 case crack0281 mean_dice 0.024507 mean_hd95 95.110196
+[17:50:09.610] idx 51 case crack0293 mean_dice 0.038370 mean_hd95 89.898751
+[17:50:09.808] idx 52 case crack0294 mean_dice 0.161345 mean_hd95 19.000000
+[17:50:09.989] idx 53 case crack0296 mean_dice 0.107458 mean_hd95 30.004166
+[17:50:10.158] idx 54 case crack0306 mean_dice 0.000000 mean_hd95 467.589121
+[17:50:10.354] idx 55 case crack0324 mean_dice 0.030768 mean_hd95 128.423273
+[17:50:10.529] idx 56 case crack0331 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:10.709] idx 57 case crack0336 mean_dice 0.033203 mean_hd95 78.364495
+[17:50:10.908] idx 58 case crack0346 mean_dice 0.112118 mean_hd95 39.314113
+[17:50:11.040] idx 59 case crack0347 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:11.224] idx 60 case crack0349 mean_dice 0.082639 mean_hd95 220.332702
+[17:50:11.363] idx 61 case crack0358 mean_dice 0.000000 mean_hd95 252.729681
+[17:50:11.572] idx 62 case crack0359 mean_dice 0.161671 mean_hd95 24.351591
+[17:50:11.699] idx 63 case crack0364 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:11.869] idx 64 case crack0371 mean_dice 0.226642 mean_hd95 19.189740
+[17:50:12.009] idx 65 case crack0375 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:12.210] idx 66 case crack0383 mean_dice 0.129804 mean_hd95 31.000000
+[17:50:12.382] idx 67 case crack0387 mean_dice 0.184049 mean_hd95 196.128784
+[17:50:12.535] idx 68 case crack0395 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:12.670] idx 69 case crack0396 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:12.823] idx 70 case crack0404 mean_dice 0.326672 mean_hd95 20.815848
+[17:50:13.006] idx 71 case crack0409 mean_dice 0.011590 mean_hd95 123.469751
+[17:50:13.180] idx 72 case crack0410 mean_dice 0.166618 mean_hd95 225.701130
+[17:50:13.376] idx 73 case crack0413 mean_dice 0.196046 mean_hd95 146.000000
+[17:50:13.576] idx 74 case crack0418 mean_dice 0.020480 mean_hd95 259.900653
+[17:50:13.748] idx 75 case crack0431 mean_dice 0.056159 mean_hd95 256.938475
+[17:50:13.935] idx 76 case crack0437 mean_dice 0.020948 mean_hd95 298.519681
+[17:50:14.126] idx 77 case crack0438 mean_dice 0.000000 mean_hd95 191.998958
+[17:50:14.288] idx 78 case crack0440 mean_dice 0.219530 mean_hd95 20.741059
+[17:50:14.445] idx 79 case crack0451 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:14.594] idx 80 case crack0452 mean_dice 0.103607 mean_hd95 322.530619
+[17:50:14.789] idx 81 case crack0453 mean_dice 0.011983 mean_hd95 363.670180
+[17:50:14.965] idx 82 case crack0455 mean_dice 0.123740 mean_hd95 50.718783
+[17:50:15.116] idx 83 case crack0464 mean_dice 0.032959 mean_hd95 311.843837
+[17:50:15.280] idx 84 case crack0485 mean_dice 0.303533 mean_hd95 42.055320
+[17:50:15.468] idx 85 case crack0488 mean_dice 0.165470 mean_hd95 25.495098
+[17:50:15.660] idx 86 case crack0490 mean_dice 0.253195 mean_hd95 18.027756
+[17:50:15.836] idx 87 case crack0492 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:16.005] idx 88 case crack0498 mean_dice 0.114231 mean_hd95 48.003645
+[17:50:16.176] idx 89 case crack0514 mean_dice 0.196432 mean_hd95 32.693270
+[17:50:16.364] idx 90 case crack0516 mean_dice 0.047498 mean_hd95 130.951894
+[17:50:16.509] idx 91 case crack0521 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:16.665] idx 92 case crack0522 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:16.843] idx 93 case crack0523 mean_dice 0.124173 mean_hd95 349.279684
+[17:50:17.005] idx 94 case crack0525 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:17.166] idx 95 case crack0533 mean_dice 0.145567 mean_hd95 30.334765
+[17:50:17.298] idx 96 case crack0541 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:17.440] idx 97 case crack0555 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:17.578] idx 98 case crack0570 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:17.727] idx 99 case crack0577 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:17.900] idx 100 case crack0582 mean_dice 0.057566 mean_hd95 356.274050
+[17:50:18.028] idx 101 case crack0584 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:18.201] idx 102 case crack0587 mean_dice 0.031313 mean_hd95 65.329909
+[17:50:18.389] idx 103 case crack0589 mean_dice 0.157493 mean_hd95 24.083189
+[17:50:18.560] idx 104 case crack0590 mean_dice 0.066870 mean_hd95 36.221541
+[17:50:18.724] idx 105 case crack0592 mean_dice 0.167162 mean_hd95 23.618588
+[17:50:18.905] idx 106 case crack0594 mean_dice 0.110892 mean_hd95 19.416488
+[17:50:19.040] idx 107 case crack0596 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:19.192] idx 108 case crack0598 mean_dice 0.057288 mean_hd95 173.574396
+[17:50:19.333] idx 109 case crack0599 mean_dice 0.000000 mean_hd95 185.709177
+[17:50:19.533] idx 110 case crack0602 mean_dice 0.027289 mean_hd95 98.499743
+[17:50:19.729] idx 111 case crack0612 mean_dice 0.083761 mean_hd95 42.427585
+[17:50:19.890] idx 112 case crack0615 mean_dice 0.063213 mean_hd95 43.820078
+[17:50:20.012] idx 113 case crack0625 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:20.152] idx 114 case crack0627 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:20.312] idx 115 case crack0635 mean_dice 0.088496 mean_hd95 37.121422
+[17:50:20.516] idx 116 case crack0642 mean_dice 0.097032 mean_hd95 39.474026
+[17:50:20.702] idx 117 case crack0644 mean_dice 0.018790 mean_hd95 312.158997
+[17:50:20.883] idx 118 case crack0646 mean_dice 0.019512 mean_hd95 362.872008
+[17:50:21.053] idx 119 case crack0667 mean_dice 0.063405 mean_hd95 60.991801
+[17:50:21.218] idx 120 case crack0678 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:21.353] idx 121 case crack0682 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:21.512] idx 122 case crack0683 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:21.648] idx 123 case crack0688 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:21.833] idx 124 case crack0692 mean_dice 0.043461 mean_hd95 168.400000
+[17:50:21.983] idx 125 case crack0694 mean_dice 0.000000 mean_hd95 375.000000
+[17:50:22.174] idx 126 case crack0695 mean_dice 0.134739 mean_hd95 36.058976
+[17:50:22.372] idx 127 case crack0696 mean_dice 0.039810 mean_hd95 69.231496
+[17:50:22.518] idx 128 case crack0700 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:22.667] idx 129 case crack0713 mean_dice 0.183059 mean_hd95 18.000000
+[17:50:22.800] idx 130 case crack0718 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:22.922] idx 131 case crack0725 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:23.098] idx 132 case crack0726 mean_dice 0.130283 mean_hd95 363.000000
+[17:50:23.274] idx 133 case crack0730 mean_dice 0.043463 mean_hd95 490.820484
+[17:50:23.446] idx 134 case crack0736 mean_dice 0.092563 mean_hd95 67.474902
+[17:50:23.636] idx 135 case crack0742 mean_dice 0.040947 mean_hd95 207.889377
+[17:50:23.806] idx 136 case crack0743 mean_dice 0.063126 mean_hd95 342.735427
+[17:50:23.953] idx 137 case crack0759 mean_dice 0.077079 mean_hd95 27.032377
+[17:50:24.119] idx 138 case crack0765 mean_dice 0.034366 mean_hd95 75.674282
+[17:50:24.270] idx 139 case crack0767 mean_dice 0.132863 mean_hd95 44.910431
+[17:50:24.421] idx 140 case crack0772 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:24.601] idx 141 case crack0773 mean_dice 0.000000 mean_hd95 372.777413
+[17:50:24.765] idx 142 case crack0776 mean_dice 0.000000 mean_hd95 292.069683
+[17:50:24.924] idx 143 case crack0779 mean_dice 0.138384 mean_hd95 20.000000
+[17:50:25.101] idx 144 case crack0781 mean_dice 0.039924 mean_hd95 379.992995
+[17:50:25.253] idx 145 case crack0792 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:25.389] idx 146 case crack0795 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:25.558] idx 147 case crack0800 mean_dice 0.115014 mean_hd95 24.698178
+[17:50:25.694] idx 148 case crack0802 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:25.873] idx 149 case crack0803 mean_dice 0.014532 mean_hd95 97.744054
+[17:50:26.070] idx 150 case crack0804 mean_dice 0.034356 mean_hd95 46.108564
+[17:50:26.234] idx 151 case crack0805 mean_dice 0.025508 mean_hd95 147.732867
+[17:50:26.419] idx 152 case crack0812 mean_dice 0.024850 mean_hd95 94.021274
+[17:50:26.562] idx 153 case crack0819 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:26.754] idx 154 case crack0821 mean_dice 0.029336 mean_hd95 78.000000
+[17:50:26.901] idx 155 case crack0822 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:27.097] idx 156 case crack0844 mean_dice 0.138443 mean_hd95 291.494425
+[17:50:27.248] idx 157 case crack0856 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:27.388] idx 158 case crack0857 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:27.554] idx 159 case crack0859 mean_dice 0.041906 mean_hd95 91.000000
+[17:50:27.751] idx 160 case crack0865 mean_dice 0.023884 mean_hd95 75.159825
+[17:50:27.879] idx 161 case crack0869 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:28.088] idx 162 case crack0880 mean_dice 0.110549 mean_hd95 34.012497
+[17:50:28.245] idx 163 case crack0889 mean_dice 0.057846 mean_hd95 67.067131
+[17:50:28.392] idx 164 case crack0898 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:28.525] idx 165 case crack0900 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:28.682] idx 166 case crack0903 mean_dice 0.000000 mean_hd95 245.067428
+[17:50:28.867] idx 167 case crack0908 mean_dice 0.366444 mean_hd95 35.000000
+[17:50:29.057] idx 168 case crack0915 mean_dice 0.071759 mean_hd95 33.615473
+[17:50:29.215] idx 169 case crack0917 mean_dice 0.000000 mean_hd95 226.058212
+[17:50:29.364] idx 170 case crack0926 mean_dice 0.021155 mean_hd95 100.124922
+[17:50:29.520] idx 171 case crack0927 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:29.694] idx 172 case crack0928 mean_dice 0.036069 mean_hd95 20.683121
+[17:50:29.873] idx 173 case crack0929 mean_dice 0.027727 mean_hd95 100.419122
+[17:50:30.026] idx 174 case crack0934 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:30.173] idx 175 case crack0935 mean_dice 0.139161 mean_hd95 371.850440
+[17:50:30.355] idx 176 case crack0943 mean_dice 0.086649 mean_hd95 335.969193
+[17:50:30.526] idx 177 case crack0950 mean_dice 0.105230 mean_hd95 58.239157
+[17:50:30.692] idx 178 case crack0957 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:30.830] idx 179 case crack0958 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:30.999] idx 180 case crack0959 mean_dice 0.084908 mean_hd95 61.927324
+[17:50:31.152] idx 181 case crack0960 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:31.320] idx 182 case crack0968 mean_dice 0.362146 mean_hd95 75.750000
+[17:50:31.489] idx 183 case crack0977 mean_dice 0.055056 mean_hd95 30.153527
+[17:50:31.654] idx 184 case crack0979 mean_dice 0.072053 mean_hd95 44.759292
+[17:50:31.805] idx 185 case crack0980 mean_dice 0.057506 mean_hd95 36.725226
+[17:50:31.962] idx 186 case crack0987 mean_dice 0.047405 mean_hd95 53.166209
+[17:50:32.143] idx 187 case crack0988 mean_dice 0.015139 mean_hd95 276.056600
+[17:50:32.270] idx 188 case crack1000 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:32.395] idx 189 case crack1001 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:32.545] idx 190 case crack1006 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:32.673] idx 191 case crack1011 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:32.859] idx 192 case crack1012 mean_dice 0.125987 mean_hd95 33.541020
+[17:50:33.002] idx 193 case crack1015 mean_dice 0.000000 mean_hd95 239.050491
+[17:50:33.164] idx 194 case crack1017 mean_dice 0.008609 mean_hd95 368.807459
+[17:50:33.318] idx 195 case crack1025 mean_dice 0.118131 mean_hd95 25.059928
+[17:50:33.510] idx 196 case crack1026 mean_dice 0.068207 mean_hd95 40.160280
+[17:50:33.674] idx 197 case crack1032 mean_dice 0.000000 mean_hd95 193.687631
+[17:50:33.841] idx 198 case crack1034 mean_dice 0.009778 mean_hd95 288.157911
+[17:50:34.004] idx 199 case crack1035 mean_dice 0.049219 mean_hd95 311.150392
+[17:50:34.186] idx 200 case crack1041 mean_dice 0.215606 mean_hd95 10.686219
+[17:50:34.352] idx 201 case crack1047 mean_dice 0.042961 mean_hd95 114.586212
+[17:50:34.489] idx 202 case crack1048 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:34.679] idx 203 case crack1052 mean_dice 0.037387 mean_hd95 100.278320
+[17:50:34.867] idx 204 case crack1059 mean_dice 0.098258 mean_hd95 36.891733
+[17:50:35.010] idx 205 case crack1060 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:35.202] idx 206 case crack1065 mean_dice 0.116370 mean_hd95 433.065699
+[17:50:35.381] idx 207 case crack1068 mean_dice 0.062677 mean_hd95 61.002049
+[17:50:35.551] idx 208 case crack1069 mean_dice 0.099736 mean_hd95 44.917172
+[17:50:35.745] idx 209 case crack1072 mean_dice 0.131145 mean_hd95 38.390027
+[17:50:35.903] idx 210 case crack1076 mean_dice 0.005311 mean_hd95 170.729938
+[17:50:36.104] idx 211 case crack1077 mean_dice 0.076387 mean_hd95 93.380113
+[17:50:36.321] idx 212 case crack1080 mean_dice 0.155512 mean_hd95 23.102998
+[17:50:36.511] idx 213 case crack1081 mean_dice 0.011468 mean_hd95 190.776358
+[17:50:36.717] idx 214 case crack1084 mean_dice 0.301380 mean_hd95 12.031196
+[17:50:36.885] idx 215 case crack1086 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:37.073] idx 216 case crack1088 mean_dice 0.040539 mean_hd95 215.068811
+[17:50:37.231] idx 217 case crack1090 mean_dice 0.120534 mean_hd95 62.000000
+[17:50:37.403] idx 218 case crack1096 mean_dice 0.004990 mean_hd95 157.406044
+[17:50:37.523] idx 219 case crack1102 mean_dice 0.147269 mean_hd95 26.856068
+[17:50:37.689] idx 220 case crack1110 mean_dice 0.093054 mean_hd95 250.000000
+[17:50:37.888] idx 221 case crack1112 mean_dice 0.160138 mean_hd95 57.723479
+[17:50:38.053] idx 222 case crack1113 mean_dice 0.068477 mean_hd95 243.241775
+[17:50:38.210] idx 223 case crack1122 mean_dice 0.085635 mean_hd95 235.950000
+[17:50:38.395] idx 224 case crack1125 mean_dice 0.160745 mean_hd95 31.035460
+[17:50:38.580] idx 225 case crack1130 mean_dice 0.049886 mean_hd95 95.127020
+[17:50:38.758] idx 226 case crack1145 mean_dice 0.077603 mean_hd95 45.625962
+[17:50:38.917] idx 227 case crack1146 mean_dice 0.073014 mean_hd95 119.519873
+[17:50:39.117] idx 228 case crack1149 mean_dice 0.147652 mean_hd95 24.000000
+[17:50:39.274] idx 229 case crack1157 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:39.474] idx 230 case crack1162 mean_dice 0.095048 mean_hd95 38.327536
+[17:50:39.658] idx 231 case crack1164 mean_dice 0.111808 mean_hd95 42.544095
+[17:50:39.812] idx 232 case crack1177 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:39.971] idx 233 case crack1179 mean_dice 0.000000 mean_hd95 363.683367
+[17:50:40.171] idx 234 case crack1189 mean_dice 0.000000 mean_hd95 207.000000
+[17:50:40.355] idx 235 case crack1196 mean_dice 0.047151 mean_hd95 42.312222
+[17:50:40.487] idx 236 case crack1200 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:40.639] idx 237 case crack1202 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:40.791] idx 238 case crack1207 mean_dice 0.068925 mean_hd95 23.021729
+[17:50:40.974] idx 239 case crack1209 mean_dice 0.065307 mean_hd95 50.000000
+[17:50:41.150] idx 240 case crack1214 mean_dice 0.077924 mean_hd95 35.341194
+[17:50:41.319] idx 241 case crack1215 mean_dice 0.025021 mean_hd95 113.746151
+[17:50:41.495] idx 242 case crack1220 mean_dice 0.112827 mean_hd95 75.106591
+[17:50:41.696] idx 243 case crack1221 mean_dice 0.095768 mean_hd95 30.766766
+[17:50:41.854] idx 244 case crack1222 mean_dice 0.000000 mean_hd95 280.966446
+[17:50:42.046] idx 245 case crack1225 mean_dice 0.022964 mean_hd95 203.762771
+[17:50:42.247] idx 246 case crack1228 mean_dice 0.033497 mean_hd95 50.840242
+[17:50:42.409] idx 247 case crack1232 mean_dice 0.144474 mean_hd95 21.020227
+[17:50:42.552] idx 248 case crack1237 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:42.715] idx 249 case crack1240 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:42.896] idx 250 case crack1247 mean_dice 0.106120 mean_hd95 231.046931
+[17:50:43.040] idx 251 case crack1253 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:43.215] idx 252 case crack1266 mean_dice 0.124188 mean_hd95 19.707843
+[17:50:43.386] idx 253 case crack1277 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:43.526] idx 254 case crack1281 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:43.661] idx 255 case crack1285 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:43.808] idx 256 case crack1286 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:43.966] idx 257 case crack1291 mean_dice 0.000393 mean_hd95 487.311902
+[17:50:44.108] idx 258 case crack1308 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:44.286] idx 259 case crack1310 mean_dice 0.027174 mean_hd95 379.209695
+[17:50:44.468] idx 260 case crack1319 mean_dice 0.214084 mean_hd95 42.953463
+[17:50:44.599] idx 261 case crack1325 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:44.799] idx 262 case crack1331 mean_dice 0.102870 mean_hd95 34.481879
+[17:50:44.963] idx 263 case crack1339 mean_dice 0.070550 mean_hd95 35.000714
+[17:50:45.132] idx 264 case crack1345 mean_dice 0.034510 mean_hd95 326.276863
+[17:50:45.269] idx 265 case crack1350 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:45.447] idx 266 case crack1352 mean_dice 0.046663 mean_hd95 47.267156
+[17:50:45.607] idx 267 case crack1355 mean_dice 0.000000 mean_hd95 222.657582
+[17:50:45.784] idx 268 case crack1364 mean_dice 0.067749 mean_hd95 81.218492
+[17:50:45.927] idx 269 case crack1367 mean_dice 0.160046 mean_hd95 36.924132
+[17:50:46.107] idx 270 case crack1377 mean_dice 0.063756 mean_hd95 108.147330
+[17:50:46.285] idx 271 case crack1378 mean_dice 0.123612 mean_hd95 40.000000
+[17:50:46.447] idx 272 case crack1381 mean_dice 0.027245 mean_hd95 57.535999
+[17:50:46.610] idx 273 case crack1384 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:46.754] idx 274 case crack1386 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:46.898] idx 275 case crack1389 mean_dice 0.079633 mean_hd95 292.500000
+[17:50:47.057] idx 276 case crack1390 mean_dice 0.138741 mean_hd95 35.267507
+[17:50:47.198] idx 277 case crack1391 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:47.361] idx 278 case crack1392 mean_dice 0.180063 mean_hd95 26.000000
+[17:50:47.524] idx 279 case crack1396 mean_dice 0.009102 mean_hd95 144.086779
+[17:50:47.670] idx 280 case crack1398 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:47.823] idx 281 case crack1404 mean_dice 0.084999 mean_hd95 47.208027
+[17:50:48.012] idx 282 case crack1408 mean_dice 0.066421 mean_hd95 27.223995
+[17:50:48.199] idx 283 case crack1411 mean_dice 0.080074 mean_hd95 107.958765
+[17:50:48.373] idx 284 case crack1413 mean_dice 0.052072 mean_hd95 44.911023
+[17:50:48.548] idx 285 case crack1415 mean_dice 0.026014 mean_hd95 85.447935
+[17:50:48.704] idx 286 case crack1417 mean_dice 0.091689 mean_hd95 31.000000
+[17:50:48.856] idx 287 case crack1429 mean_dice 0.040183 mean_hd95 115.354996
+[17:50:49.023] idx 288 case crack1437 mean_dice 0.158253 mean_hd95 393.000000
+[17:50:49.214] idx 289 case crack1438 mean_dice 0.084320 mean_hd95 347.455297
+[17:50:49.370] idx 290 case crack1439 mean_dice 0.058060 mean_hd95 248.474127
+[17:50:49.562] idx 291 case crack1447 mean_dice 0.110897 mean_hd95 27.012959
+[17:50:49.686] idx 292 case crack1454 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:49.881] idx 293 case crack1458 mean_dice 0.064374 mean_hd95 25.465657
+[17:50:50.068] idx 294 case crack1460 mean_dice 0.068395 mean_hd95 215.000000
+[17:50:50.201] idx 295 case crack1465 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:50.383] idx 296 case crack1467 mean_dice 0.125471 mean_hd95 198.279277
+[17:50:50.567] idx 297 case crack1469 mean_dice 0.108813 mean_hd95 37.463101
+[17:50:50.700] idx 298 case crack1488 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:50.858] idx 299 case crack1496 mean_dice 0.056281 mean_hd95 65.490457
+[17:50:51.039] idx 300 case crack1508 mean_dice 0.216705 mean_hd95 40.300000
+[17:50:51.199] idx 301 case crack1512 mean_dice 0.046216 mean_hd95 124.886714
+[17:50:51.363] idx 302 case crack1517 mean_dice 0.033002 mean_hd95 147.000000
+[17:50:51.541] idx 303 case crack1524 mean_dice 0.115800 mean_hd95 46.000000
+[17:50:51.730] idx 304 case crack1526 mean_dice 0.098494 mean_hd95 268.032086
+[17:50:51.895] idx 305 case crack1527 mean_dice 0.003996 mean_hd95 104.000000
+[17:50:52.079] idx 306 case crack1528 mean_dice 0.100263 mean_hd95 119.108483
+[17:50:52.241] idx 307 case crack1530 mean_dice 0.022487 mean_hd95 302.984975
+[17:50:52.437] idx 308 case crack1537 mean_dice 0.064104 mean_hd95 259.886264
+[17:50:52.602] idx 309 case crack1547 mean_dice 0.073167 mean_hd95 50.658091
+[17:50:52.762] idx 310 case crack1550 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:52.918] idx 311 case crack1554 mean_dice 0.013660 mean_hd95 101.710373
+[17:50:53.147] idx 312 case crack1560 mean_dice 0.087477 mean_hd95 48.052055
+[17:50:53.289] idx 313 case crack1562 mean_dice 0.053763 mean_hd95 88.700000
+[17:50:53.462] idx 314 case crack1564 mean_dice 0.043177 mean_hd95 56.931510
+[17:50:53.656] idx 315 case crack1567 mean_dice 0.155331 mean_hd95 31.429005
+[17:50:53.858] idx 316 case crack1570 mean_dice 0.076077 mean_hd95 167.234320
+[17:50:54.006] idx 317 case crack1573 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:54.185] idx 318 case crack1575 mean_dice 0.093211 mean_hd95 151.005960
+[17:50:54.354] idx 319 case crack1582 mean_dice 0.000000 mean_hd95 220.956277
+[17:50:54.547] idx 320 case crack1584 mean_dice 0.109052 mean_hd95 307.914754
+[17:50:54.702] idx 321 case crack1587 mean_dice 0.126312 mean_hd95 25.136753
+[17:50:54.876] idx 322 case crack1592 mean_dice 0.147991 mean_hd95 59.000000
+[17:50:55.061] idx 323 case crack1594 mean_dice 0.059806 mean_hd95 79.775357
+[17:50:55.214] idx 324 case crack1595 mean_dice 0.026613 mean_hd95 239.025338
+[17:50:55.378] idx 325 case crack1597 mean_dice 0.134891 mean_hd95 14.401328
+[17:50:55.536] idx 326 case crack1601 mean_dice 0.213207 mean_hd95 18.788294
+[17:50:55.706] idx 327 case crack1605 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:55.886] idx 328 case crack1606 mean_dice 0.097575 mean_hd95 48.846699
+[17:50:56.043] idx 329 case crack1610 mean_dice 0.091500 mean_hd95 26.000000
+[17:50:56.174] idx 330 case crack1611 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:56.359] idx 331 case crack1621 mean_dice 0.135471 mean_hd95 63.117807
+[17:50:56.521] idx 332 case crack1640 mean_dice 0.055256 mean_hd95 161.249479
+[17:50:56.701] idx 333 case crack1641 mean_dice 0.066246 mean_hd95 206.165467
+[17:50:56.858] idx 334 case crack1644 mean_dice 0.067780 mean_hd95 53.516233
+[17:50:57.048] idx 335 case crack1650 mean_dice 0.051010 mean_hd95 93.050000
+[17:50:57.243] idx 336 case crack1656 mean_dice 0.155811 mean_hd95 49.031622
+[17:50:57.410] idx 337 case crack1663 mean_dice 0.219588 mean_hd95 39.509882
+[17:50:57.580] idx 338 case crack1669 mean_dice 0.075393 mean_hd95 210.737974
+[17:50:57.764] idx 339 case crack1671 mean_dice 0.056632 mean_hd95 118.968801
+[17:50:57.970] idx 340 case crack1674 mean_dice 0.098919 mean_hd95 32.335548
+[17:50:58.133] idx 341 case crack1678 mean_dice 0.113651 mean_hd95 30.061600
+[17:50:58.250] idx 342 case crack1684 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:58.392] idx 343 case crack1691 mean_dice 0.000000 mean_hd95 182.508585
+[17:50:58.529] idx 344 case crack1692 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:58.721] idx 345 case crack1693 mean_dice 0.064298 mean_hd95 54.129474
+[17:50:58.915] idx 346 case crack1697 mean_dice 0.039942 mean_hd95 93.973386
+[17:50:59.069] idx 347 case crack1699 mean_dice 1.000000 mean_hd95 0.000000
+[17:50:59.250] idx 348 case crack1705 mean_dice 0.052070 mean_hd95 28.338773
+[17:50:59.413] idx 349 case crack1709 mean_dice 0.011924 mean_hd95 101.180010
+[17:50:59.542] idx 350 case crack1710 mean_dice 0.000000 mean_hd95 0.000000
+[17:50:59.752] idx 351 case crack1715 mean_dice 0.153486 mean_hd95 109.724835
+[17:50:59.906] idx 352 case crack1726 mean_dice 0.091822 mean_hd95 50.093410
+[17:51:00.076] idx 353 case crack1740 mean_dice 0.024731 mean_hd95 52.153619
+[17:51:00.258] idx 354 case crack1744 mean_dice 0.000000 mean_hd95 299.365997
+[17:51:00.442] idx 355 case crack1747 mean_dice 0.031513 mean_hd95 343.075487
+[17:51:00.601] idx 356 case crack1755 mean_dice 0.069101 mean_hd95 32.015621
+[17:51:00.778] idx 357 case crack1761 mean_dice 0.052018 mean_hd95 202.939291
+[17:51:00.930] idx 358 case crack1764 mean_dice 0.138480 mean_hd95 20.000000
+[17:51:01.092] idx 359 case crack1766 mean_dice 0.040663 mean_hd95 34.713110
+[17:51:01.282] idx 360 case crack1768 mean_dice 0.012196 mean_hd95 182.250000
+[17:51:01.430] idx 361 case crack1771 mean_dice 0.001273 mean_hd95 81.933204
+[17:51:01.590] idx 362 case crack1798 mean_dice 0.000000 mean_hd95 169.290416
+[17:51:01.736] idx 363 case crack1801 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:01.899] idx 364 case crack1804 mean_dice 0.061934 mean_hd95 33.271596
+[17:51:02.075] idx 365 case crack1805 mean_dice 0.135304 mean_hd95 263.073374
+[17:51:02.210] idx 366 case crack1808 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:02.414] idx 367 case crack1821 mean_dice 0.084739 mean_hd95 62.209272
+[17:51:02.586] idx 368 case crack1828 mean_dice 0.157486 mean_hd95 349.578889
+[17:51:02.745] idx 369 case crack1832 mean_dice 0.193380 mean_hd95 33.734256
+[17:51:02.922] idx 370 case crack1833 mean_dice 0.070024 mean_hd95 80.945127
+[17:51:03.085] idx 371 case crack1835 mean_dice 0.112335 mean_hd95 40.406634
+[17:51:03.253] idx 372 case crack1838 mean_dice 0.078536 mean_hd95 23.013008
+[17:51:03.412] idx 373 case crack1839 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:03.571] idx 374 case crack1844 mean_dice 0.054036 mean_hd95 30.056149
+[17:51:03.760] idx 375 case crack1854 mean_dice 0.032308 mean_hd95 72.000000
+[17:51:03.914] idx 376 case crack1858 mean_dice 0.122111 mean_hd95 177.942640
+[17:51:04.047] idx 377 case crack1862 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:04.228] idx 378 case crack1864 mean_dice 0.211213 mean_hd95 72.000000
+[17:51:04.348] idx 379 case crack1866 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:04.519] idx 380 case crack1869 mean_dice 0.000000 mean_hd95 284.755595
+[17:51:04.685] idx 381 case crack1870 mean_dice 0.099779 mean_hd95 24.038510
+[17:51:04.827] idx 382 case crack1878 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:05.003] idx 383 case crack1883 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:05.160] idx 384 case crack1889 mean_dice 0.032794 mean_hd95 66.856246
+[17:51:05.338] idx 385 case crack1896 mean_dice 0.033488 mean_hd95 76.718918
+[17:51:05.491] idx 386 case crack1898 mean_dice 0.147343 mean_hd95 320.905901
+[17:51:05.650] idx 387 case crack1926 mean_dice 0.109167 mean_hd95 25.000000
+[17:51:05.802] idx 388 case crack1941 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:05.987] idx 389 case crack1944 mean_dice 0.101941 mean_hd95 460.000000
+[17:51:06.186] idx 390 case crack1956 mean_dice 0.041718 mean_hd95 151.093767
+[17:51:06.381] idx 391 case crack1960 mean_dice 0.440915 mean_hd95 17.489829
+[17:51:06.558] idx 392 case crack1969 mean_dice 0.028513 mean_hd95 68.876330
+[17:51:06.750] idx 393 case crack1987 mean_dice 0.069207 mean_hd95 77.546203
+[17:51:06.904] idx 394 case crack1988 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:07.033] idx 395 case crack1992 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:07.251] idx 396 case crack1993 mean_dice 0.112905 mean_hd95 126.000000
+[17:51:07.402] idx 397 case crack1996 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:07.559] idx 398 case crack1998 mean_dice 0.059815 mean_hd95 37.121422
+[17:51:07.718] idx 399 case crack1999 mean_dice 0.001711 mean_hd95 154.272687
+[17:51:07.907] idx 400 case crack2002 mean_dice 0.011973 mean_hd95 207.266004
+[17:51:08.069] idx 401 case crack2005 mean_dice 0.125251 mean_hd95 19.416488
+[17:51:08.236] idx 402 case crack2006 mean_dice 0.036073 mean_hd95 60.213786
+[17:51:08.382] idx 403 case crack2013 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:08.512] idx 404 case crack2021 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:08.673] idx 405 case crack2024 mean_dice 0.192907 mean_hd95 182.044444
+[17:51:08.871] idx 406 case crack2025 mean_dice 0.053396 mean_hd95 183.764521
+[17:51:09.048] idx 407 case crack2030 mean_dice 0.038282 mean_hd95 85.005882
+[17:51:09.226] idx 408 case crack2039 mean_dice 0.022226 mean_hd95 221.216662
+[17:51:09.388] idx 409 case crack2042 mean_dice 0.111656 mean_hd95 21.946523
+[17:51:09.576] idx 410 case crack2048 mean_dice 0.319771 mean_hd95 142.647712
+[17:51:09.732] idx 411 case crack2049 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:09.889] idx 412 case crack2064 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:10.078] idx 413 case crack2066 mean_dice 0.072363 mean_hd95 63.999606
+[17:51:10.239] idx 414 case crack2073 mean_dice 0.063560 mean_hd95 52.103255
+[17:51:10.443] idx 415 case crack2075 mean_dice 0.120126 mean_hd95 23.194827
+[17:51:10.650] idx 416 case crack2079 mean_dice 0.058370 mean_hd95 54.588002
+[17:51:10.855] idx 417 case crack2088 mean_dice 0.056295 mean_hd95 70.028566
+[17:51:10.993] idx 418 case crack2093 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:11.189] idx 419 case crack2095 mean_dice 0.038964 mean_hd95 96.953591
+[17:51:11.369] idx 420 case crack2096 mean_dice 0.040063 mean_hd95 103.550000
+[17:51:11.573] idx 421 case crack2098 mean_dice 0.000000 mean_hd95 436.726459
+[17:51:11.736] idx 422 case crack2102 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:11.908] idx 423 case crack2103 mean_dice 0.081731 mean_hd95 31.575307
+[17:51:12.088] idx 424 case crack2104 mean_dice 0.077754 mean_hd95 43.894166
+[17:51:12.264] idx 425 case crack2107 mean_dice 0.126467 mean_hd95 30.831785
+[17:51:12.442] idx 426 case crack2113 mean_dice 0.079198 mean_hd95 37.876738
+[17:51:12.626] idx 427 case crack2122 mean_dice 0.026604 mean_hd95 219.106344
+[17:51:12.808] idx 428 case crack2124 mean_dice 0.134885 mean_hd95 55.997320
+[17:51:12.945] idx 429 case crack2130 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:13.099] idx 430 case crack2131 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:13.287] idx 431 case crack2134 mean_dice 0.013977 mean_hd95 399.846074
+[17:51:13.475] idx 432 case crack2137 mean_dice 0.072396 mean_hd95 250.000000
+[17:51:13.637] idx 433 case crack2141 mean_dice 0.000000 mean_hd95 488.108594
+[17:51:13.798] idx 434 case crack2146 mean_dice 0.000000 mean_hd95 231.295370
+[17:51:13.962] idx 435 case crack2160 mean_dice 0.038086 mean_hd95 60.533875
+[17:51:14.122] idx 436 case crack2163 mean_dice 0.176207 mean_hd95 19.974797
+[17:51:14.298] idx 437 case crack2167 mean_dice 0.087267 mean_hd95 236.891954
+[17:51:14.512] idx 438 case crack2173 mean_dice 0.016646 mean_hd95 218.464679
+[17:51:14.663] idx 439 case crack2183 mean_dice 0.007846 mean_hd95 100.773241
+[17:51:14.849] idx 440 case crack2194 mean_dice 0.129610 mean_hd95 26.847702
+[17:51:14.999] idx 441 case crack2199 mean_dice 0.063195 mean_hd95 80.546212
+[17:51:15.123] idx 442 case crack2204 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:15.252] idx 443 case crack2206 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:15.439] idx 444 case crack2219 mean_dice 0.000000 mean_hd95 121.773960
+[17:51:15.614] idx 445 case crack2229 mean_dice 0.023200 mean_hd95 69.754871
+[17:51:15.803] idx 446 case crack2237 mean_dice 0.204587 mean_hd95 17.718826
+[17:51:15.982] idx 447 case crack2238 mean_dice 0.005472 mean_hd95 421.000000
+[17:51:16.181] idx 448 case crack2241 mean_dice 0.107370 mean_hd95 180.000000
+[17:51:16.318] idx 449 case crack2242 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:16.483] idx 450 case crack2255 mean_dice 0.155794 mean_hd95 18.442790
+[17:51:16.649] idx 451 case crack2257 mean_dice 0.000000 mean_hd95 284.931571
+[17:51:16.850] idx 452 case crack2261 mean_dice 0.033063 mean_hd95 49.907618
+[17:51:17.065] idx 453 case crack2280 mean_dice 0.458614 mean_hd95 19.000000
+[17:51:17.248] idx 454 case crack2289 mean_dice 0.009304 mean_hd95 123.750000
+[17:51:17.395] idx 455 case crack2292 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:17.580] idx 456 case crack2293 mean_dice 0.124395 mean_hd95 195.921862
+[17:51:17.763] idx 457 case crack2301 mean_dice 0.069659 mean_hd95 177.145962
+[17:51:17.918] idx 458 case crack2304 mean_dice 0.028161 mean_hd95 285.425416
+[17:51:18.059] idx 459 case crack2309 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:18.203] idx 460 case crack2320 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:18.366] idx 461 case crack2323 mean_dice 0.067024 mean_hd95 72.310989
+[17:51:18.530] idx 462 case crack2326 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:18.716] idx 463 case crack2327 mean_dice 0.006839 mean_hd95 273.261037
+[17:51:18.887] idx 464 case crack2332 mean_dice 0.098373 mean_hd95 27.658633
+[17:51:19.060] idx 465 case crack2338 mean_dice 0.053962 mean_hd95 176.039666
+[17:51:19.228] idx 466 case crack2348 mean_dice 0.029862 mean_hd95 78.498357
+[17:51:19.382] idx 467 case crack2357 mean_dice 0.041276 mean_hd95 114.466352
+[17:51:19.561] idx 468 case crack2361 mean_dice 0.103102 mean_hd95 18.439089
+[17:51:19.738] idx 469 case crack2370 mean_dice 0.050059 mean_hd95 80.635598
+[17:51:19.876] idx 470 case crack2375 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:20.062] idx 471 case crack2379 mean_dice 0.000000 mean_hd95 406.999693
+[17:51:20.239] idx 472 case crack2383 mean_dice 0.199304 mean_hd95 22.000000
+[17:51:20.439] idx 473 case crack2402 mean_dice 0.119728 mean_hd95 26.000000
+[17:51:20.620] idx 474 case crack2403 mean_dice 0.124382 mean_hd95 50.286760
+[17:51:20.815] idx 475 case crack2404 mean_dice 0.019617 mean_hd95 86.254847
+[17:51:21.025] idx 476 case crack2409 mean_dice 0.017077 mean_hd95 128.544348
+[17:51:21.221] idx 477 case crack2418 mean_dice 0.089556 mean_hd95 44.061194
+[17:51:21.421] idx 478 case crack2420 mean_dice 0.052750 mean_hd95 73.131041
+[17:51:21.626] idx 479 case crack2431 mean_dice 0.069070 mean_hd95 48.068697
+[17:51:21.831] idx 480 case crack2433 mean_dice 0.007754 mean_hd95 130.657950
+[17:51:22.036] idx 481 case crack2435 mean_dice 0.081054 mean_hd95 57.078893
+[17:51:22.237] idx 482 case crack2436 mean_dice 0.101487 mean_hd95 35.009998
+[17:51:22.454] idx 483 case crack2441 mean_dice 0.046332 mean_hd95 82.263882
+[17:51:22.663] idx 484 case crack2453 mean_dice 0.100198 mean_hd95 23.000000
+[17:51:22.874] idx 485 case crack2456 mean_dice 0.063309 mean_hd95 323.492195
+[17:51:23.094] idx 486 case crack2474 mean_dice 0.095510 mean_hd95 34.539832
+[17:51:23.315] idx 487 case crack2476 mean_dice 0.000274 mean_hd95 315.243130
+[17:51:23.517] idx 488 case crack2482 mean_dice 0.021526 mean_hd95 101.230429
+[17:51:23.703] idx 489 case crack2487 mean_dice 0.043206 mean_hd95 61.000000
+[17:51:23.894] idx 490 case crack2492 mean_dice 0.074544 mean_hd95 208.822877
+[17:51:24.117] idx 491 case crack2497 mean_dice 0.081125 mean_hd95 37.938097
+[17:51:24.322] idx 492 case crack2498 mean_dice 0.007044 mean_hd95 159.250115
+[17:51:24.524] idx 493 case crack2500 mean_dice 0.096232 mean_hd95 45.429360
+[17:51:24.703] idx 494 case crack2507 mean_dice 0.000000 mean_hd95 0.000000
+[17:51:24.884] idx 495 case crack2510 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:25.082] idx 496 case crack2511 mean_dice 0.039319 mean_hd95 137.050000
+[17:51:25.290] idx 497 case crack2513 mean_dice 0.029042 mean_hd95 304.871755
+[17:51:25.487] idx 498 case crack2520 mean_dice 0.043762 mean_hd95 122.464669
+[17:51:25.683] idx 499 case crack2525 mean_dice 0.091747 mean_hd95 54.546279
+[17:51:25.898] idx 500 case crack2532 mean_dice 0.002621 mean_hd95 398.198543
+[17:51:26.095] idx 501 case crack2538 mean_dice 0.148705 mean_hd95 238.000000
+[17:51:26.307] idx 502 case crack2549 mean_dice 0.057194 mean_hd95 121.005992
+[17:51:26.526] idx 503 case crack2559 mean_dice 0.059536 mean_hd95 33.241540
+[17:51:26.715] idx 504 case crack2560 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:26.928] idx 505 case crack2565 mean_dice 0.094715 mean_hd95 253.000000
+[17:51:27.145] idx 506 case crack2566 mean_dice 0.069187 mean_hd95 62.589135
+[17:51:27.369] idx 507 case crack2578 mean_dice 0.009265 mean_hd95 159.539021
+[17:51:27.577] idx 508 case crack2581 mean_dice 0.097707 mean_hd95 45.169774
+[17:51:27.771] idx 509 case crack2584 mean_dice 0.116532 mean_hd95 27.892651
+[17:51:27.972] idx 510 case crack2589 mean_dice 0.005130 mean_hd95 179.893390
+[17:51:28.199] idx 511 case crack2592 mean_dice 0.027474 mean_hd95 65.490457
+[17:51:28.435] idx 512 case crack2595 mean_dice 0.051961 mean_hd95 57.544710
+[17:51:28.649] idx 513 case crack2597 mean_dice 0.096018 mean_hd95 24.000000
+[17:51:28.885] idx 514 case crack2598 mean_dice 0.014218 mean_hd95 131.657130
+[17:51:29.101] idx 515 case crack2602 mean_dice 0.089277 mean_hd95 60.000000
+[17:51:29.268] idx 516 case crack2603 mean_dice 1.000000 mean_hd95 0.000000
+[17:51:29.483] idx 517 case crack2604 mean_dice 0.011184 mean_hd95 162.592122
+[17:51:29.669] idx 518 case crack2605 mean_dice 0.100618 mean_hd95 30.364453
+[17:51:29.848] idx 519 case crack2608 mean_dice 0.022201 mean_hd95 86.000000
+[17:51:30.043] idx 520 case crack2638 mean_dice 0.049862 mean_hd95 202.853882
+[17:51:30.228] idx 521 case crack2641 mean_dice 0.091466 mean_hd95 25.059928
+[17:51:30.422] idx 522 case crack2644 mean_dice 0.010600 mean_hd95 104.836950
+[17:51:30.623] idx 523 case crack2662 mean_dice 0.015638 mean_hd95 77.278232
+[17:51:30.799] idx 524 case crack2664 mean_dice 0.096118 mean_hd95 28.000000
+[17:52:02.129] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[17:52:02.134] 830 test iterations per epoch
+[17:52:07.862] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[17:52:08.087] idx 1 case crack0003 mean_dice 0.105772 mean_hd95 39.924930
+[17:52:08.266] idx 2 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[17:52:08.457] idx 3 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[17:52:08.667] idx 4 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[17:52:08.882] idx 5 case crack0025 mean_dice 0.169800 mean_hd95 23.367693
+[17:52:09.066] idx 6 case crack0028 mean_dice 0.120961 mean_hd95 31.953091
+[17:52:09.217] idx 7 case crack0034 mean_dice 0.071384 mean_hd95 268.710798
+[17:52:09.422] idx 8 case crack0037 mean_dice 0.077814 mean_hd95 43.453419
+[17:52:09.561] idx 9 case crack0042 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:09.708] idx 10 case crack0058 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:09.840] idx 11 case crack0072 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:10.001] idx 12 case crack0075 mean_dice 0.109406 mean_hd95 328.377202
+[17:52:10.170] idx 13 case crack0083 mean_dice 0.093089 mean_hd95 104.221933
+[17:52:10.354] idx 14 case crack0087 mean_dice 0.035336 mean_hd95 152.400000
+[17:52:10.494] idx 15 case crack0092 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:10.670] idx 16 case crack0101 mean_dice 0.161265 mean_hd95 117.001282
+[17:52:10.815] idx 17 case crack0102 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:10.993] idx 18 case crack0110 mean_dice 0.082448 mean_hd95 80.000000
+[17:52:11.146] idx 19 case crack0112 mean_dice 0.002415 mean_hd95 99.632575
+[17:52:11.339] idx 20 case crack0115 mean_dice 0.050306 mean_hd95 43.000000
+[17:52:11.459] idx 21 case crack0116 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:11.614] idx 22 case crack0123 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:11.800] idx 23 case crack0139 mean_dice 0.108327 mean_hd95 31.000000
+[17:52:11.985] idx 24 case crack0140 mean_dice 0.149219 mean_hd95 40.199502
+[17:52:12.163] idx 25 case crack0141 mean_dice 0.076469 mean_hd95 224.225227
+[17:52:12.334] idx 26 case crack0144 mean_dice 0.057098 mean_hd95 197.323931
+[17:52:12.543] idx 27 case crack0146 mean_dice 0.201027 mean_hd95 26.442335
+[17:52:12.677] idx 28 case crack0147 mean_dice 0.000000 mean_hd95 0.000000
+[17:52:12.816] idx 29 case crack0156 mean_dice 0.089817 mean_hd95 64.035124
+[17:52:13.028] idx 30 case crack0172 mean_dice 0.032253 mean_hd95 64.000000
+[17:52:13.201] idx 31 case crack0173 mean_dice 0.021481 mean_hd95 146.389877
+[17:52:13.348] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 241.050928
+[17:52:13.556] idx 33 case crack0195 mean_dice 0.097177 mean_hd95 41.109610
+[17:52:13.707] idx 34 case crack0201 mean_dice 0.100575 mean_hd95 149.529900
+[17:52:13.873] idx 35 case crack0207 mean_dice 0.012223 mean_hd95 108.403412
+[17:52:14.076] idx 36 case crack0210 mean_dice 0.119787 mean_hd95 28.635642
+[17:52:14.245] idx 37 case crack0213 mean_dice 0.026345 mean_hd95 55.465304
+[17:52:14.409] idx 38 case crack0215 mean_dice 0.023653 mean_hd95 123.063145
+[17:52:14.573] idx 39 case crack0218 mean_dice 0.037331 mean_hd95 77.000000
+[17:52:14.710] idx 40 case crack0220 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:14.886] idx 41 case crack0239 mean_dice 0.139530 mean_hd95 257.000000
+[17:52:15.031] idx 42 case crack0241 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:15.223] idx 43 case crack0246 mean_dice 0.019665 mean_hd95 244.198264
+[17:52:15.399] idx 44 case crack0258 mean_dice 0.028085 mean_hd95 127.592122
+[17:52:15.572] idx 45 case crack0259 mean_dice 0.013883 mean_hd95 153.300000
+[17:52:15.725] idx 46 case crack0264 mean_dice 0.041790 mean_hd95 102.650000
+[17:52:15.861] idx 47 case crack0267 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:16.034] idx 48 case crack0273 mean_dice 0.050989 mean_hd95 26.925824
+[17:52:16.179] idx 49 case crack0277 mean_dice 0.037327 mean_hd95 195.197846
+[17:52:16.342] idx 50 case crack0281 mean_dice 0.024507 mean_hd95 95.110196
+[17:52:16.504] idx 51 case crack0293 mean_dice 0.038370 mean_hd95 89.898751
+[17:52:16.705] idx 52 case crack0294 mean_dice 0.161345 mean_hd95 19.000000
+[17:52:16.889] idx 53 case crack0296 mean_dice 0.107458 mean_hd95 30.004166
+[17:52:17.061] idx 54 case crack0306 mean_dice 0.000000 mean_hd95 467.589121
+[17:52:17.258] idx 55 case crack0324 mean_dice 0.030768 mean_hd95 128.423273
+[17:52:17.432] idx 56 case crack0331 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:17.608] idx 57 case crack0336 mean_dice 0.033203 mean_hd95 78.364495
+[17:52:17.798] idx 58 case crack0346 mean_dice 0.112118 mean_hd95 39.314113
+[17:52:17.931] idx 59 case crack0347 mean_dice 0.000000 mean_hd95 0.000000
+[17:52:18.126] idx 60 case crack0349 mean_dice 0.082639 mean_hd95 220.332702
+[17:52:18.268] idx 61 case crack0358 mean_dice 0.000000 mean_hd95 252.729681
+[17:52:18.474] idx 62 case crack0359 mean_dice 0.161671 mean_hd95 24.351591
+[17:52:18.606] idx 63 case crack0364 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:18.779] idx 64 case crack0371 mean_dice 0.226642 mean_hd95 19.189740
+[17:52:18.918] idx 65 case crack0375 mean_dice 1.000000 mean_hd95 0.000000
+[17:52:19.117] idx 66 case crack0383 mean_dice 0.129804 mean_hd95 31.000000
+[17:52:19.288] idx 67 case crack0387 mean_dice 0.184049 mean_hd95 196.128784
+[17:52:19.445] idx 68 case crack0395 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:40.226] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:05:40.228] 830 test iterations per epoch
+[18:05:47.321] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[18:05:47.537] idx 1 case crack0003 mean_dice 0.105772 mean_hd95 39.924930
+[18:05:47.716] idx 2 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[18:05:47.893] idx 3 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[18:05:48.089] idx 4 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[18:05:48.281] idx 5 case crack0025 mean_dice 0.169800 mean_hd95 23.367693
+[18:05:48.453] idx 6 case crack0028 mean_dice 0.120961 mean_hd95 31.953091
+[18:05:48.597] idx 7 case crack0034 mean_dice 0.071384 mean_hd95 268.710798
+[18:05:48.792] idx 8 case crack0037 mean_dice 0.077814 mean_hd95 43.453419
+[18:05:48.924] idx 9 case crack0042 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:49.067] idx 10 case crack0058 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:49.195] idx 11 case crack0072 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:49.352] idx 12 case crack0075 mean_dice 0.109406 mean_hd95 328.377202
+[18:05:49.543] idx 13 case crack0083 mean_dice 0.093089 mean_hd95 104.221933
+[18:05:49.736] idx 14 case crack0087 mean_dice 0.035336 mean_hd95 152.400000
+[18:05:49.887] idx 15 case crack0092 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:50.072] idx 16 case crack0101 mean_dice 0.161265 mean_hd95 117.001282
+[18:05:50.220] idx 17 case crack0102 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:50.398] idx 18 case crack0110 mean_dice 0.082448 mean_hd95 80.000000
+[18:05:50.565] idx 19 case crack0112 mean_dice 0.002415 mean_hd95 99.632575
+[18:05:50.764] idx 20 case crack0115 mean_dice 0.050306 mean_hd95 43.000000
+[18:05:50.888] idx 21 case crack0116 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:51.051] idx 22 case crack0123 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:51.235] idx 23 case crack0139 mean_dice 0.108327 mean_hd95 31.000000
+[18:05:51.420] idx 24 case crack0140 mean_dice 0.149219 mean_hd95 40.199502
+[18:05:51.600] idx 25 case crack0141 mean_dice 0.076469 mean_hd95 224.225227
+[18:05:51.781] idx 26 case crack0144 mean_dice 0.057098 mean_hd95 197.323931
+[18:05:51.983] idx 27 case crack0146 mean_dice 0.201027 mean_hd95 26.442335
+[18:05:52.119] idx 28 case crack0147 mean_dice 0.000000 mean_hd95 0.000000
+[18:05:52.263] idx 29 case crack0156 mean_dice 0.089817 mean_hd95 64.035124
+[18:05:52.486] idx 30 case crack0172 mean_dice 0.032253 mean_hd95 64.000000
+[18:05:52.667] idx 31 case crack0173 mean_dice 0.021481 mean_hd95 146.389877
+[18:05:52.818] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 241.050928
+[18:05:53.025] idx 33 case crack0195 mean_dice 0.097177 mean_hd95 41.109610
+[18:05:53.183] idx 34 case crack0201 mean_dice 0.100575 mean_hd95 149.529900
+[18:05:53.349] idx 35 case crack0207 mean_dice 0.012223 mean_hd95 108.403412
+[18:05:53.540] idx 36 case crack0210 mean_dice 0.119787 mean_hd95 28.635642
+[18:05:53.711] idx 37 case crack0213 mean_dice 0.026345 mean_hd95 55.465304
+[18:05:53.871] idx 38 case crack0215 mean_dice 0.023653 mean_hd95 123.063145
+[18:05:54.035] idx 39 case crack0218 mean_dice 0.037331 mean_hd95 77.000000
+[18:05:54.181] idx 40 case crack0220 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:54.361] idx 41 case crack0239 mean_dice 0.139530 mean_hd95 257.000000
+[18:05:54.494] idx 42 case crack0241 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:54.685] idx 43 case crack0246 mean_dice 0.019665 mean_hd95 244.198264
+[18:05:54.867] idx 44 case crack0258 mean_dice 0.028085 mean_hd95 127.592122
+[18:05:55.041] idx 45 case crack0259 mean_dice 0.013883 mean_hd95 153.300000
+[18:05:55.197] idx 46 case crack0264 mean_dice 0.041790 mean_hd95 102.650000
+[18:05:55.336] idx 47 case crack0267 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:55.508] idx 48 case crack0273 mean_dice 0.050989 mean_hd95 26.925824
+[18:05:55.651] idx 49 case crack0277 mean_dice 0.037327 mean_hd95 195.197846
+[18:05:55.812] idx 50 case crack0281 mean_dice 0.024507 mean_hd95 95.110196
+[18:05:55.973] idx 51 case crack0293 mean_dice 0.038370 mean_hd95 89.898751
+[18:05:56.166] idx 52 case crack0294 mean_dice 0.161345 mean_hd95 19.000000
+[18:05:56.343] idx 53 case crack0296 mean_dice 0.107458 mean_hd95 30.004166
+[18:05:56.500] idx 54 case crack0306 mean_dice 0.000000 mean_hd95 467.589121
+[18:05:56.684] idx 55 case crack0324 mean_dice 0.030768 mean_hd95 128.423273
+[18:05:56.853] idx 56 case crack0331 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:57.025] idx 57 case crack0336 mean_dice 0.033203 mean_hd95 78.364495
+[18:05:57.209] idx 58 case crack0346 mean_dice 0.112118 mean_hd95 39.314113
+[18:05:57.343] idx 59 case crack0347 mean_dice 0.000000 mean_hd95 0.000000
+[18:05:57.522] idx 60 case crack0349 mean_dice 0.082639 mean_hd95 220.332702
+[18:05:57.657] idx 61 case crack0358 mean_dice 0.000000 mean_hd95 252.729681
+[18:05:57.868] idx 62 case crack0359 mean_dice 0.161671 mean_hd95 24.351591
+[18:05:57.997] idx 63 case crack0364 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:58.160] idx 64 case crack0371 mean_dice 0.226642 mean_hd95 19.189740
+[18:05:58.301] idx 65 case crack0375 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:58.496] idx 66 case crack0383 mean_dice 0.129804 mean_hd95 31.000000
+[18:05:58.670] idx 67 case crack0387 mean_dice 0.184049 mean_hd95 196.128784
+[18:05:58.818] idx 68 case crack0395 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:58.951] idx 69 case crack0396 mean_dice 1.000000 mean_hd95 0.000000
+[18:05:59.096] idx 70 case crack0404 mean_dice 0.326672 mean_hd95 20.815848
+[18:05:59.270] idx 71 case crack0409 mean_dice 0.011590 mean_hd95 123.469751
+[18:05:59.441] idx 72 case crack0410 mean_dice 0.166618 mean_hd95 225.701130
+[18:05:59.639] idx 73 case crack0413 mean_dice 0.196046 mean_hd95 146.000000
+[18:05:59.833] idx 74 case crack0418 mean_dice 0.020480 mean_hd95 259.900653
+[18:05:59.999] idx 75 case crack0431 mean_dice 0.056159 mean_hd95 256.938475
+[18:06:00.184] idx 76 case crack0437 mean_dice 0.020948 mean_hd95 298.519681
+[18:06:00.379] idx 77 case crack0438 mean_dice 0.000000 mean_hd95 191.998958
+[18:06:00.536] idx 78 case crack0440 mean_dice 0.219530 mean_hd95 20.741059
+[18:06:00.696] idx 79 case crack0451 mean_dice 1.000000 mean_hd95 0.000000
+[18:06:00.845] idx 80 case crack0452 mean_dice 0.103607 mean_hd95 322.530619
+[18:06:01.046] idx 81 case crack0453 mean_dice 0.011983 mean_hd95 363.670180
+[18:12:02.401] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:12:02.402] 830 test iterations per epoch
+[18:12:08.359] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[18:12:08.584] idx 1 case crack0003 mean_dice 0.105772 mean_hd95 39.924930
+[18:12:08.767] idx 2 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[18:12:08.958] idx 3 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[18:12:09.177] idx 4 case crack0017 mean_dice 0.052812 mean_hd95 315.106966
+[18:12:09.387] idx 5 case crack0025 mean_dice 0.169800 mean_hd95 23.367693
+[18:12:09.576] idx 6 case crack0028 mean_dice 0.120961 mean_hd95 31.953091
+[18:12:09.736] idx 7 case crack0034 mean_dice 0.071384 mean_hd95 268.710798
+[18:12:09.948] idx 8 case crack0037 mean_dice 0.077814 mean_hd95 43.453419
+[18:12:10.108] idx 9 case crack0042 mean_dice 1.000000 mean_hd95 0.000000
+[18:12:10.278] idx 10 case crack0058 mean_dice 1.000000 mean_hd95 0.000000
+[18:12:10.424] idx 11 case crack0072 mean_dice 1.000000 mean_hd95 0.000000
+[18:12:10.597] idx 12 case crack0075 mean_dice 0.109406 mean_hd95 328.377202
+[18:12:10.776] idx 13 case crack0083 mean_dice 0.093089 mean_hd95 104.221933
+[18:12:10.972] idx 14 case crack0087 mean_dice 0.035336 mean_hd95 152.400000
+[18:12:11.119] idx 15 case crack0092 mean_dice 1.000000 mean_hd95 0.000000
+[18:12:11.297] idx 16 case crack0101 mean_dice 0.161265 mean_hd95 117.001282
+[18:12:11.450] idx 17 case crack0102 mean_dice 1.000000 mean_hd95 0.000000
+[18:12:23.999] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:12:24.001] 830 test iterations per epoch
+[18:21:30.855] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:21:30.857] 830 test iterations per epoch
+[18:45:50.330] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[18:45:50.336] 830 test iterations per epoch
+[19:05:16.099] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:05:16.113] 830 test iterations per epoch
+[20:56:30.238] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[20:56:30.241] 830 test iterations per epoch
+[21:00:41.723] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:00:41.725] 830 test iterations per epoch
+[21:22:40.182] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:22:40.183] 830 test iterations per epoch
+[21:22:53.656] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[21:22:59.324] idx 1 case crack0003 mean_dice 0.105772 mean_hd95 39.924930
+[21:23:07.282] idx 2 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[21:23:14.922] idx 3 case crack0010 mean_dice 0.038598 mean_hd95 56.978886
+[21:32:01.457] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:32:01.458] 830 test iterations per epoch
+[21:35:45.933] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[21:54:27.855] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[21:54:27.859] 830 test iterations per epoch
+[21:54:38.254] idx 0 case crack0002 mean_dice 0.062919 mean_hd95 180.011111
+[21:54:45.620] idx 1 case crack0003 mean_dice 0.105772 mean_hd95 39.924930
+[21:54:50.382] idx 2 case crack0007 mean_dice 0.175252 mean_hd95 25.696313
+[12:55:12.874] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[12:55:12.876] 830 test iterations per epoch
+[12:56:43.136] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[12:56:43.138] 830 test iterations per epoch
+[12:56:51.341] idx 0 case crack0002 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:51.581] idx 1 case crack0003 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:51.777] idx 2 case crack0007 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:51.973] idx 3 case crack0010 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:52.178] idx 4 case crack0017 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:52.394] idx 5 case crack0025 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:52.588] idx 6 case crack0028 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:52.758] idx 7 case crack0034 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:52.977] idx 8 case crack0037 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:53.165] idx 9 case crack0042 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:53.360] idx 10 case crack0058 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:53.538] idx 11 case crack0072 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:53.719] idx 12 case crack0075 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:53.903] idx 13 case crack0083 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:54.101] idx 14 case crack0087 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:54.280] idx 15 case crack0092 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:54.469] idx 16 case crack0101 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:54.651] idx 17 case crack0102 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:54.833] idx 18 case crack0110 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:55.004] idx 19 case crack0112 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:55.219] idx 20 case crack0115 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:55.381] idx 21 case crack0116 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:55.578] idx 22 case crack0123 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:55.781] idx 23 case crack0139 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:55.979] idx 24 case crack0140 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:56.183] idx 25 case crack0141 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:56.381] idx 26 case crack0144 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:56.610] idx 27 case crack0146 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:56.795] idx 28 case crack0147 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:56.958] idx 29 case crack0156 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:57.199] idx 30 case crack0172 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:57.388] idx 31 case crack0173 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:57.557] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:57.790] idx 33 case crack0195 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:57.964] idx 34 case crack0201 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:58.142] idx 35 case crack0207 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:58.357] idx 36 case crack0210 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:58.540] idx 37 case crack0213 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:58.721] idx 38 case crack0215 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:58.906] idx 39 case crack0218 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:59.093] idx 40 case crack0220 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:59.294] idx 41 case crack0239 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:59.474] idx 42 case crack0241 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:59.681] idx 43 case crack0246 mean_dice 0.000000 mean_hd95 0.000000
+[12:56:59.874] idx 44 case crack0258 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:00.093] idx 45 case crack0259 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:00.268] idx 46 case crack0264 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:00.449] idx 47 case crack0267 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:00.636] idx 48 case crack0273 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:00.804] idx 49 case crack0277 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:00.994] idx 50 case crack0281 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:01.181] idx 51 case crack0293 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:01.411] idx 52 case crack0294 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:01.626] idx 53 case crack0296 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:01.826] idx 54 case crack0306 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:02.053] idx 55 case crack0324 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:02.288] idx 56 case crack0331 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:02.488] idx 57 case crack0336 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:02.722] idx 58 case crack0346 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:02.918] idx 59 case crack0347 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:03.133] idx 60 case crack0349 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:03.308] idx 61 case crack0358 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:03.546] idx 62 case crack0359 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:03.719] idx 63 case crack0364 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:03.909] idx 64 case crack0371 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:04.090] idx 65 case crack0375 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:04.314] idx 66 case crack0383 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:04.503] idx 67 case crack0387 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:04.692] idx 68 case crack0395 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:04.864] idx 69 case crack0396 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:05.029] idx 70 case crack0404 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:05.215] idx 71 case crack0409 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:05.399] idx 72 case crack0410 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:05.612] idx 73 case crack0413 mean_dice 0.000000 mean_hd95 0.000000
+[12:57:17.583] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[12:57:17.584] 830 test iterations per epoch
+[13:02:21.628] idx 0 case crack0002 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:22.070] idx 1 case crack0003 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:22.253] idx 2 case crack0007 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:22.444] idx 3 case crack0010 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:22.649] idx 4 case crack0017 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:22.857] idx 5 case crack0025 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:23.046] idx 6 case crack0028 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:23.256] idx 7 case crack0034 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:23.461] idx 8 case crack0037 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:23.642] idx 9 case crack0042 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:23.822] idx 10 case crack0058 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:23.984] idx 11 case crack0072 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:24.141] idx 12 case crack0075 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:24.309] idx 13 case crack0083 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:24.495] idx 14 case crack0087 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:24.666] idx 15 case crack0092 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:24.846] idx 16 case crack0101 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:25.013] idx 17 case crack0102 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:25.208] idx 18 case crack0110 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:25.382] idx 19 case crack0112 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:25.580] idx 20 case crack0115 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:25.733] idx 21 case crack0116 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:25.926] idx 22 case crack0123 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:26.115] idx 23 case crack0139 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:26.298] idx 24 case crack0140 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:26.481] idx 25 case crack0141 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:26.666] idx 26 case crack0144 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:26.891] idx 27 case crack0146 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:27.061] idx 28 case crack0147 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:27.215] idx 29 case crack0156 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:27.449] idx 30 case crack0172 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:27.620] idx 31 case crack0173 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:27.768] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:27.977] idx 33 case crack0195 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:28.138] idx 34 case crack0201 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:28.320] idx 35 case crack0207 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:28.532] idx 36 case crack0210 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:28.705] idx 37 case crack0213 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:39.763] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[13:02:39.765] 830 test iterations per epoch
+[13:02:45.611] idx 0 case crack0002 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:45.825] idx 1 case crack0003 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:45.997] idx 2 case crack0007 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:46.180] idx 3 case crack0010 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:46.378] idx 4 case crack0017 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:46.579] idx 5 case crack0025 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:46.758] idx 6 case crack0028 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:46.905] idx 7 case crack0034 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:47.101] idx 8 case crack0037 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:47.261] idx 9 case crack0042 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:47.448] idx 10 case crack0058 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:47.616] idx 11 case crack0072 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:47.785] idx 12 case crack0075 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:47.961] idx 13 case crack0083 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:48.158] idx 14 case crack0087 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:48.333] idx 15 case crack0092 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:48.516] idx 16 case crack0101 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:48.691] idx 17 case crack0102 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:48.876] idx 18 case crack0110 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:49.041] idx 19 case crack0112 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:49.243] idx 20 case crack0115 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:49.400] idx 21 case crack0116 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:49.586] idx 22 case crack0123 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:49.767] idx 23 case crack0139 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:49.944] idx 24 case crack0140 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:50.124] idx 25 case crack0141 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:50.297] idx 26 case crack0144 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:50.513] idx 27 case crack0146 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:50.674] idx 28 case crack0147 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:50.815] idx 29 case crack0156 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:51.055] idx 30 case crack0172 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:51.222] idx 31 case crack0173 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:51.370] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:51.576] idx 33 case crack0195 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:51.729] idx 34 case crack0201 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:51.888] idx 35 case crack0207 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:52.080] idx 36 case crack0210 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:52.244] idx 37 case crack0213 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:52.400] idx 38 case crack0215 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:52.562] idx 39 case crack0218 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:52.730] idx 40 case crack0220 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:52.907] idx 41 case crack0239 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:53.071] idx 42 case crack0241 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:53.262] idx 43 case crack0246 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:53.451] idx 44 case crack0258 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:53.672] idx 45 case crack0259 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:53.837] idx 46 case crack0264 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:54.018] idx 47 case crack0267 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:54.208] idx 48 case crack0273 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:54.363] idx 49 case crack0277 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:54.532] idx 50 case crack0281 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:54.706] idx 51 case crack0293 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:54.916] idx 52 case crack0294 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:55.110] idx 53 case crack0296 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:55.297] idx 54 case crack0306 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:55.498] idx 55 case crack0324 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:55.719] idx 56 case crack0331 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:55.901] idx 57 case crack0336 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:56.110] idx 58 case crack0346 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:56.283] idx 59 case crack0347 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:56.493] idx 60 case crack0349 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:56.655] idx 61 case crack0358 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:56.887] idx 62 case crack0359 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:57.062] idx 63 case crack0364 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:57.257] idx 64 case crack0371 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:57.449] idx 65 case crack0375 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:57.671] idx 66 case crack0383 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:57.865] idx 67 case crack0387 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:58.056] idx 68 case crack0395 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:58.231] idx 69 case crack0396 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:58.403] idx 70 case crack0404 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:58.593] idx 71 case crack0409 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:58.782] idx 72 case crack0410 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:59.000] idx 73 case crack0413 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:59.210] idx 74 case crack0418 mean_dice 0.000000 mean_hd95 0.000000
+[13:02:59.393] idx 75 case crack0431 mean_dice 0.000000 mean_hd95 0.000000
+[11:00:57.047] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[11:00:57.048] 830 test iterations per epoch
+[11:01:05.305] idx 0 case crack0002 mean_dice 0.237976 mean_hd95 320.712642
+[11:01:05.539] idx 1 case crack0003 mean_dice 0.260107 mean_hd95 37.336309
+[11:01:05.735] idx 2 case crack0007 mean_dice 0.431557 mean_hd95 28.150000
+[11:01:05.936] idx 3 case crack0010 mean_dice 0.261725 mean_hd95 123.050000
+[11:01:06.148] idx 4 case crack0017 mean_dice 0.143879 mean_hd95 313.851397
+[11:01:06.355] idx 5 case crack0025 mean_dice 0.334864 mean_hd95 27.071029
+[11:01:06.540] idx 6 case crack0028 mean_dice 0.261890 mean_hd95 31.000000
+[11:01:06.702] idx 7 case crack0034 mean_dice 0.252473 mean_hd95 158.194369
+[11:01:06.911] idx 8 case crack0037 mean_dice 0.189000 mean_hd95 36.339985
+[11:01:07.052] idx 9 case crack0042 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:07.203] idx 10 case crack0058 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:07.340] idx 11 case crack0072 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:07.510] idx 12 case crack0075 mean_dice 0.271279 mean_hd95 327.211890
+[11:01:07.689] idx 13 case crack0083 mean_dice 0.384576 mean_hd95 232.425354
+[11:01:07.878] idx 14 case crack0087 mean_dice 0.225797 mean_hd95 153.850000
+[11:01:08.022] idx 15 case crack0092 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:08.199] idx 16 case crack0101 mean_dice 0.287757 mean_hd95 153.445533
+[11:01:08.351] idx 17 case crack0102 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:08.534] idx 18 case crack0110 mean_dice 0.187522 mean_hd95 121.000000
+[11:01:08.695] idx 19 case crack0112 mean_dice 0.256238 mean_hd95 254.676361
+[11:01:08.895] idx 20 case crack0115 mean_dice 0.211637 mean_hd95 47.169906
+[11:01:09.020] idx 21 case crack0116 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:09.179] idx 22 case crack0123 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:09.372] idx 23 case crack0139 mean_dice 0.230146 mean_hd95 137.492901
+[11:01:09.563] idx 24 case crack0140 mean_dice 0.287766 mean_hd95 38.000000
+[11:01:09.747] idx 25 case crack0141 mean_dice 0.272654 mean_hd95 251.436617
+[11:01:09.927] idx 26 case crack0144 mean_dice 0.200830 mean_hd95 192.363200
+[11:01:10.144] idx 27 case crack0146 mean_dice 0.492103 mean_hd95 22.621727
+[11:01:10.283] idx 28 case crack0147 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:10.430] idx 29 case crack0156 mean_dice 0.223702 mean_hd95 62.801274
+[11:01:10.658] idx 30 case crack0172 mean_dice 0.224286 mean_hd95 31.212129
+[11:01:10.837] idx 31 case crack0173 mean_dice 0.069203 mean_hd95 141.265691
+[11:01:10.983] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 256.758642
+[11:01:11.202] idx 33 case crack0195 mean_dice 0.270810 mean_hd95 30.265492
+[11:01:11.362] idx 34 case crack0201 mean_dice 0.189967 mean_hd95 148.234833
+[11:01:11.531] idx 35 case crack0207 mean_dice 0.103329 mean_hd95 124.000000
+[11:01:11.731] idx 36 case crack0210 mean_dice 0.248763 mean_hd95 26.970330
+[11:01:11.901] idx 37 case crack0213 mean_dice 0.141304 mean_hd95 48.000000
+[11:01:12.073] idx 38 case crack0215 mean_dice 0.107659 mean_hd95 276.703270
+[11:01:12.245] idx 39 case crack0218 mean_dice 0.170900 mean_hd95 75.000000
+[11:01:12.392] idx 40 case crack0220 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:12.585] idx 41 case crack0239 mean_dice 0.288293 mean_hd95 255.000000
+[11:01:12.731] idx 42 case crack0241 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:12.935] idx 43 case crack0246 mean_dice 0.039660 mean_hd95 235.902937
+[11:01:13.128] idx 44 case crack0258 mean_dice 0.070641 mean_hd95 141.064511
+[11:01:13.306] idx 45 case crack0259 mean_dice 0.247672 mean_hd95 241.000000
+[11:01:13.465] idx 46 case crack0264 mean_dice 0.270737 mean_hd95 153.450000
+[11:01:13.609] idx 47 case crack0267 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:13.797] idx 48 case crack0273 mean_dice 0.307868 mean_hd95 397.393268
+[11:01:13.949] idx 49 case crack0277 mean_dice 0.308200 mean_hd95 169.900000
+[11:01:14.124] idx 50 case crack0281 mean_dice 0.095948 mean_hd95 144.000000
+[11:01:14.292] idx 51 case crack0293 mean_dice 0.187755 mean_hd95 95.454422
+[11:01:14.496] idx 52 case crack0294 mean_dice 0.362987 mean_hd95 17.000000
+[11:01:14.678] idx 53 case crack0296 mean_dice 0.283229 mean_hd95 29.607425
+[11:01:14.846] idx 54 case crack0306 mean_dice 0.000000 mean_hd95 412.494970
+[11:01:15.043] idx 55 case crack0324 mean_dice 0.204768 mean_hd95 210.009642
+[11:01:15.231] idx 56 case crack0331 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:15.416] idx 57 case crack0336 mean_dice 0.144363 mean_hd95 72.653508
+[11:01:15.614] idx 58 case crack0346 mean_dice 0.236114 mean_hd95 38.000000
+[11:01:15.781] idx 59 case crack0347 mean_dice 0.000000 mean_hd95 305.000000
+[11:01:15.973] idx 60 case crack0349 mean_dice 0.278676 mean_hd95 227.495055
+[11:01:16.125] idx 61 case crack0358 mean_dice 0.000000 mean_hd95 265.615414
+[11:01:16.338] idx 62 case crack0359 mean_dice 0.293201 mean_hd95 23.000000
+[11:01:16.468] idx 63 case crack0364 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:16.653] idx 64 case crack0371 mean_dice 0.458152 mean_hd95 179.000000
+[11:01:16.805] idx 65 case crack0375 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:17.019] idx 66 case crack0383 mean_dice 0.249496 mean_hd95 29.177891
+[11:01:17.200] idx 67 case crack0387 mean_dice 0.160655 mean_hd95 311.951471
+[11:01:17.362] idx 68 case crack0395 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:17.508] idx 69 case crack0396 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:17.669] idx 70 case crack0404 mean_dice 0.490742 mean_hd95 306.130684
+[11:01:17.853] idx 71 case crack0409 mean_dice 0.192654 mean_hd95 128.193503
+[11:01:18.045] idx 72 case crack0410 mean_dice 0.268660 mean_hd95 326.778924
+[11:01:18.248] idx 73 case crack0413 mean_dice 0.298532 mean_hd95 300.875883
+[11:01:18.458] idx 74 case crack0418 mean_dice 0.039771 mean_hd95 258.790262
+[11:01:18.645] idx 75 case crack0431 mean_dice 0.195724 mean_hd95 235.020493
+[11:01:18.840] idx 76 case crack0437 mean_dice 0.093541 mean_hd95 480.588960
+[11:01:19.040] idx 77 case crack0438 mean_dice 0.000596 mean_hd95 198.452513
+[11:01:19.206] idx 78 case crack0440 mean_dice 0.383500 mean_hd95 18.360281
+[11:01:19.378] idx 79 case crack0451 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:19.541] idx 80 case crack0452 mean_dice 0.286571 mean_hd95 350.583799
+[11:01:19.750] idx 81 case crack0453 mean_dice 0.036380 mean_hd95 384.523341
+[11:01:19.931] idx 82 case crack0455 mean_dice 0.218385 mean_hd95 114.118322
+[11:01:20.107] idx 83 case crack0464 mean_dice 0.107022 mean_hd95 190.000000
+[11:01:20.287] idx 84 case crack0485 mean_dice 0.527886 mean_hd95 104.214846
+[11:01:20.486] idx 85 case crack0488 mean_dice 0.333021 mean_hd95 23.086793
+[11:01:20.690] idx 86 case crack0490 mean_dice 0.429635 mean_hd95 16.127613
+[11:01:20.872] idx 87 case crack0492 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:21.047] idx 88 case crack0498 mean_dice 0.342855 mean_hd95 41.773197
+[11:01:21.225] idx 89 case crack0514 mean_dice 0.384440 mean_hd95 68.975670
+[11:01:21.423] idx 90 case crack0516 mean_dice 0.128474 mean_hd95 125.329153
+[11:01:21.570] idx 91 case crack0521 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:21.744] idx 92 case crack0522 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:21.931] idx 93 case crack0523 mean_dice 0.317000 mean_hd95 358.432420
+[11:01:22.095] idx 94 case crack0525 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:22.257] idx 95 case crack0533 mean_dice 0.472057 mean_hd95 64.000000
+[11:01:22.420] idx 96 case crack0541 mean_dice 0.026867 mean_hd95 288.777940
+[11:01:22.570] idx 97 case crack0555 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:22.727] idx 98 case crack0570 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:22.883] idx 99 case crack0577 mean_dice 1.000000 mean_hd95 0.000000
+[11:01:23.070] idx 100 case crack0582 mean_dice 0.103854 mean_hd95 394.278742
+[11:01:23.237] idx 101 case crack0584 mean_dice 0.186183 mean_hd95 17.393699
+[11:01:23.427] idx 102 case crack0587 mean_dice 0.138527 mean_hd95 79.918963
+[11:01:23.622] idx 103 case crack0589 mean_dice 0.335356 mean_hd95 120.936018
+[19:41:26.700] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:41:26.716] 830 test iterations per epoch
+[19:43:04.498] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:43:04.500] 830 test iterations per epoch
+[19:43:44.223] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:43:44.225] 830 test iterations per epoch
+[19:45:18.804] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
+[19:45:18.806] 830 test iterations per epoch
