@@ -1,4 +1,4 @@
-import os
+import cv2
 import numpy as np
 import torch
 from medpy import metric
@@ -6,10 +6,8 @@ from scipy.ndimage import zoom
 import torch.nn as nn
 import SimpleITK as sitk
 import torch.nn.functional as F
-import imageio
 from einops import repeat
-from icecream import ic
-import cv2
+import sys
 
 
 class Focal_loss(nn.Module):
@@ -98,47 +96,60 @@ class DiceLoss(nn.Module):
             loss += dice * weight[i]
         return loss / self.n_classes
 
+def get_boxes(pred, gt):
+    pred_box = excute_points(pred)
+    _, _, label_box, _ = cv2.connectedComponentsWithStats(gt.astype(np.int8), connectivity=8)
+    pred_boxes = convert_boxes(pred_box)[1:,:]
+    label_boxes = convert_boxes(label_box)[1:,:]
+    return pred_boxes, label_boxes
 
 def calculate_metric_percase(pred, gt, i):
+    idx = i
     pred = pred.astype(int) == i
     gt = gt.astype(int) == i
     pred[pred > 0] = 1
     gt[gt > 0] = 1
+    ap = compute_ap(pred, gt, 0.5)
     if pred.sum() > 0 and gt.sum() > 0:
         dice = metric.binary.dc(pred, gt)
         hd95 = metric.binary.hd95(pred, gt)
+        pred_boxes, label_boxes = get_boxes(pred, gt)
+        iou = np.mean(np.max(cal_iou(pred_boxes, label_boxes), axis=0))
     elif pred.sum() > 0 and gt.sum() == 0:
-        dice = 1
-        hd95 = 0
-    else:
         dice = 0
         hd95 = 0
-    # iou = cal_iou(pred, gt)
-    return dice, hd95
+        iou = 0
+    elif pred.sum() == 0 and gt.sum() > 0:
+        dice = 0
+        hd95 = 0
+        iou = 0
+    else:
+        return None
+    # sys.exit()
+
+    return [dice, hd95, iou, 0.5, ap, idx]
 
 
 def convert_boxes(boxes):
+    "左上到右下的点"
     x, y, w, h, n = boxes.T
-    x1 = x - w / 2
-    y1 = y - h / 2
-    x2 = x + w / 2
-    y2 = y + h / 2
+    x1 = x
+    y1 = y
+    x2 = x + w
+    y2 = y + h
     return np.stack((x1, y1, x2, y2), axis=1)
 
-def cal_iou(pred, gt):
+
+def cal_iou(pred_boxes, label_boxes):
     """计算预测框和标签框之间的 IoU 矩阵。"""
-    _, _, pred_box, _ = cv2.connectedComponentsWithStats(pred.astype(np.int8), connectivity=8)
-    _, _, label_box, _ = cv2.connectedComponentsWithStats(gt.astype(np.int8), connectivity=8)
-    pred_boxes = convert_boxes(pred_box)
-    label_boxes = convert_boxes(label_box)
-    
+
     # 计算交集面积
     inter_x1 = np.maximum(pred_boxes[:, 0][:, None], label_boxes[:, 0])
     inter_y1 = np.maximum(pred_boxes[:, 1][:, None], label_boxes[:, 1])
     inter_x2 = np.minimum(pred_boxes[:, 2][:, None], label_boxes[:, 2])
     inter_y2 = np.minimum(pred_boxes[:, 3][:, None], label_boxes[:, 3])
     inter_area = np.maximum(0, inter_x2 - inter_x1) * np.maximum(0, inter_y2 - inter_y1)
-    
+
     # 计算并集面积
     pred_area = (pred_boxes[:, 2] - pred_boxes[:, 0]) * (pred_boxes[:, 3] - pred_boxes[:, 1])
     true_area = (label_boxes[:, 2] - label_boxes[:, 0]) * (label_boxes[:, 3] - label_boxes[:, 1])
@@ -146,26 +157,107 @@ def cal_iou(pred, gt):
     
     # 计算 IoU
     iou = inter_area / union_area
-    return iou
+    # print('iou', iou)
+    # sys.exit()
+    if iou.size == 0:
+        return 0
+    else:
+        return iou
+
+
+def evaluate_image(preds, truths, iou_threshold):
+    """
+    评估单张图片的TP数量（带置信度排序）
+    :param pred_boxes: 预测框数组 [N,4]（假设已按置信度降序排序）
+    :param true_boxes: 真实框数组 [M,4]
+    :param iou_threshold: IoU判定阈值
+    :return: (TP数量, 总预测框数量)
+    """
+    pred_boxes, true_boxes = get_boxes(preds, truths)
+    num_pred = pred_boxes.shape[0] if pred_boxes.size > 0 else 0
+    num_true = true_boxes.shape[0] if true_boxes.size > 0 else 0
+    
+    if num_pred == 0 or num_true == 0:
+        return 0, num_pred
+    
+    # 计算IoU矩阵 [N,M]
+    iou_matrix = cal_iou(pred_boxes, true_boxes)
+    
+    # 匹配策略（优先高置信度预测框）
+    matched_true = np.zeros(num_true, dtype=bool)
+    tp = 0
+    
+    # 遍历每个预测框（已按置信度排序）
+    for pred_idx in range(num_pred):
+        # 找当前预测框的最佳匹配
+        best_iou = np.max(iou_matrix[pred_idx])
+        best_true_idx = np.argmax(iou_matrix[pred_idx])
+        
+        if best_iou >= iou_threshold and not matched_true[best_true_idx]:
+            tp += 1
+            matched_true[best_true_idx] = True
+    
+    return tp, num_pred
+
+
+def compute_ap(preds, truths, iou_threshold):
+    """
+    计算平均精度（AP）
+    :param pred_boxes_list: 预测框列表 [array1, array2,...]
+    :param true_boxes_list: 真实框列表 [array1, array2,...]
+    :param iou_threshold: 固定IoU阈值
+    :return: AP值
+    """
+    total_tp = 0
+    total_pred = 0
+        
+    # 执行评估
+    tp, num_pred = evaluate_image(preds, truths, iou_threshold)
+    total_tp += tp
+    total_pred += num_pred
+    
+    return total_tp / total_pred if total_pred > 0 else 0.0
+
+
+def excute_points(pred, threshold_area=100):
+    _, _, pred_box, _ = cv2.connectedComponentsWithStats(pred.astype(np.int8), connectivity=8)
+    box_label = []
+    for i in range(len(pred_box)):
+        if pred_box[i][2]*pred_box[i][3] > threshold_area:
+            box_label.append(pred_box[i])
+    
+    return np.array(box_label)
 
 
 def dialated_mask(predtion):
+    # k = np.array(
+    #     [[0, 0, 1, 0, 0],
+    #      [0, 0, 1, 0, 0],
+    #      [1, 1, 1, 1, 1],
+    #      [0, 0, 1, 0, 0],
+    #      [0, 0, 1, 0, 0]], dtype=np.uint8)
     k = np.array(
-        [[0, 0, 1, 0, 0],
+        [[1, 0, 0, 0, 1],
+         [0, 1, 0, 1, 0],
          [0, 0, 1, 0, 0],
-         [1, 1, 1, 1, 1],
-         [0, 0, 1, 0, 0],
-         [0, 0, 1, 0, 0]], dtype=np.uint8)
+         [0, 1, 0, 1, 0],
+         [1, 0, 0, 0, 1]], dtype=np.uint8)
     dilated_predition = cv2.dilate(predtion.astype(np.float32), k, iterations=1)
     return dilated_predition
 
 def erode_mask(predtion):
     k = np.array(
-        [[0, 0, 1, 0, 0],
-         [0, 0, 1, 0, 0],
+        [[1, 1, 1, 1, 1],
          [1, 1, 1, 1, 1],
-         [0, 0, 1, 0, 0],
-         [0, 0, 1, 0, 0]], dtype=np.uint8)
+         [1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1]], dtype=np.uint8)
+    # k = np.array(
+    #     [[0, 0, 1, 0, 0],
+    #      [0, 0, 1, 0, 0],
+    #      [1, 1, 1, 1, 1],
+    #      [0, 0, 1, 0, 0],
+    #      [0, 0, 1, 0, 0]], dtype=np.uint8)
     erode_predition = cv2.erode(predtion.astype(np.float32), k, iterations=1)
     return erode_predition
 
@@ -183,9 +275,8 @@ def test_single_volume(image, label, net, classes, multimask_output, patch_size=
         with torch.no_grad():
             outputs = net(inputs, multimask_output, patch_size[0])
             output_masks = outputs['masks']
-            out = torch.softmax(output_masks, dim=1).cpu().detach().numpy()
-            out = out[0,1,:,:]
-            out = (out > 0.1).astype(int)
+            out = torch.argmax(torch.softmax(output_masks, dim=1), dim=1).squeeze(0)
+            out = out.cpu().detach().numpy()
             out_h, out_w = out.shape
             if x != out_h or y != out_w:
                 pred = zoom(out, (x / out_h, y / out_w), order=0)
@@ -219,8 +310,12 @@ def test_single_volume(image, label, net, classes, multimask_output, patch_size=
                 prediction = zoom(prediction, (x / patch_size[0], y / patch_size[1]), order=0)
     metric_list = []
     for i in range(1, classes + 1):
-        # prediction = erode_mask(prediction).astype(np.uint8)
-        metric_list.append(calculate_metric_percase(prediction, label, i))
+        prediction = dialated_mask(erode_mask(prediction))
+        result = calculate_metric_percase(prediction, label, i)
+        if result is not None:
+            metric_list.append(result)
+        # print(i,metric_list)
+        # sys.exit()
 
     # prediction = dialated_mask(prediction)
 

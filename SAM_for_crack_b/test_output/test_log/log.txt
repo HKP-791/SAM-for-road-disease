@@ -1514,3 +1514,104 @@
 [19:43:44.225] 830 test iterations per epoch
 [19:45:18.804] Namespace(ckpt='checkpoints/sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=True, list_dir='./lists/lists_Synapse/', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\out_put', rank=4, seed=1234, vit_name='vit_b', volume_path='testset/test_vol_h5/')
 [19:45:18.806] 830 test iterations per epoch
+[14:46:47.816] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list\\test_vol.txt', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:48:13.196] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:48:13.197] 830 test iterations per epoch
+[14:48:22.793] idx 0 case crack0002 mean_dice 0.237976 mean_hd95 320.712642
+[14:48:22.897] idx 1 case crack0003 mean_dice 0.260107 mean_hd95 37.336309
+[14:48:22.997] idx 2 case crack0007 mean_dice 0.431557 mean_hd95 28.150000
+[14:48:23.086] idx 3 case crack0010 mean_dice 0.261725 mean_hd95 123.050000
+[14:48:23.185] idx 4 case crack0017 mean_dice 0.143879 mean_hd95 313.851397
+[14:48:23.272] idx 5 case crack0025 mean_dice 0.334864 mean_hd95 27.071029
+[14:48:23.364] idx 6 case crack0028 mean_dice 0.261890 mean_hd95 31.000000
+[14:48:23.452] idx 7 case crack0034 mean_dice 0.252473 mean_hd95 158.194369
+[14:48:23.552] idx 8 case crack0037 mean_dice 0.189000 mean_hd95 36.339985
+[14:48:23.616] idx 9 case crack0042 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:23.681] idx 10 case crack0058 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:23.745] idx 11 case crack0072 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:23.838] idx 12 case crack0075 mean_dice 0.271279 mean_hd95 327.211890
+[14:48:23.927] idx 13 case crack0083 mean_dice 0.384576 mean_hd95 232.425354
+[14:48:24.016] idx 14 case crack0087 mean_dice 0.225797 mean_hd95 153.850000
+[14:48:24.080] idx 15 case crack0092 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:24.170] idx 16 case crack0101 mean_dice 0.287757 mean_hd95 153.445533
+[14:48:24.233] idx 17 case crack0102 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:24.325] idx 18 case crack0110 mean_dice 0.187522 mean_hd95 121.000000
+[14:48:24.415] idx 19 case crack0112 mean_dice 0.256238 mean_hd95 254.676361
+[14:48:24.508] idx 20 case crack0115 mean_dice 0.211637 mean_hd95 47.169906
+[14:48:24.576] idx 21 case crack0116 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:24.646] idx 22 case crack0123 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:24.743] idx 23 case crack0139 mean_dice 0.230146 mean_hd95 137.492901
+[14:48:24.846] idx 24 case crack0140 mean_dice 0.287766 mean_hd95 38.000000
+[14:48:24.938] idx 25 case crack0141 mean_dice 0.272654 mean_hd95 251.436617
+[14:48:25.030] idx 26 case crack0144 mean_dice 0.200830 mean_hd95 192.363200
+[14:48:25.119] idx 27 case crack0146 mean_dice 0.492103 mean_hd95 22.621727
+[14:48:25.184] idx 28 case crack0147 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:25.280] idx 29 case crack0156 mean_dice 0.223702 mean_hd95 62.801274
+[14:48:25.370] idx 30 case crack0172 mean_dice 0.224286 mean_hd95 31.212129
+[14:48:25.472] idx 31 case crack0173 mean_dice 0.069203 mean_hd95 141.265691
+[14:48:25.564] idx 32 case crack0174 mean_dice 0.000000 mean_hd95 256.758642
+[14:48:25.655] idx 33 case crack0195 mean_dice 0.270810 mean_hd95 30.265492
+[14:48:25.746] idx 34 case crack0201 mean_dice 0.189967 mean_hd95 148.234833
+[14:48:25.845] idx 35 case crack0207 mean_dice 0.103329 mean_hd95 124.000000
+[14:48:25.935] idx 36 case crack0210 mean_dice 0.248763 mean_hd95 26.970330
+[14:48:26.028] idx 37 case crack0213 mean_dice 0.141304 mean_hd95 48.000000
+[14:48:26.120] idx 38 case crack0215 mean_dice 0.107659 mean_hd95 276.703270
+[14:48:26.222] idx 39 case crack0218 mean_dice 0.170900 mean_hd95 75.000000
+[14:48:26.293] idx 40 case crack0220 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:26.382] idx 41 case crack0239 mean_dice 0.288293 mean_hd95 255.000000
+[14:48:26.450] idx 42 case crack0241 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:26.552] idx 43 case crack0246 mean_dice 0.039660 mean_hd95 235.902937
+[14:48:26.650] idx 44 case crack0258 mean_dice 0.070641 mean_hd95 141.064511
+[14:48:26.740] idx 45 case crack0259 mean_dice 0.247672 mean_hd95 241.000000
+[14:48:26.835] idx 46 case crack0264 mean_dice 0.270737 mean_hd95 153.450000
+[14:48:26.900] idx 47 case crack0267 mean_dice 1.000000 mean_hd95 0.000000
+[14:48:26.995] idx 48 case crack0273 mean_dice 0.307868 mean_hd95 397.393268
+[14:52:19.636] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:52:19.637] 830 test iterations per epoch
+[14:52:49.702] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:52:49.704] 830 test iterations per epoch
+[14:54:45.208] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:54:55.925] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:54:55.927] 830 test iterations per epoch
+[14:57:14.452] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:57:14.454] 830 test iterations per epoch
+[14:57:20.288] idx 0 case crack0002 mean_dice 0.000646 mean_hd95 177.476437 iou 0.017712
+[14:57:20.400] idx 1 case crack0003 mean_dice 0.000145 mean_hd95 308.648414 iou 0.052650
+[14:57:20.499] idx 2 case crack0007 mean_dice 0.014226 mean_hd95 72.138719 iou 0.026093
+[14:57:20.570] idx 3 case crack0010 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:57:20.640] idx 4 case crack0017 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:57:20.730] idx 5 case crack0025 mean_dice 0.002991 mean_hd95 169.147120 iou 0.196880
+[14:57:20.851] idx 6 case crack0028 mean_dice 0.000563 mean_hd95 309.046594 iou 0.027105
+[14:57:20.914] idx 7 case crack0034 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:57:20.980] idx 8 case crack0037 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:58:56.721] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:58:56.722] 830 test iterations per epoch
+[14:59:02.053] idx 0 case crack0002 mean_dice 0.000646 mean_hd95 177.476437 iou 0.017712
+[14:59:02.158] idx 1 case crack0003 mean_dice 0.000145 mean_hd95 308.648414 iou 0.052650
+[14:59:02.258] idx 2 case crack0007 mean_dice 0.014226 mean_hd95 72.138719 iou 0.026093
+[14:59:02.324] idx 3 case crack0010 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:59:02.399] idx 4 case crack0017 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:59:02.488] idx 5 case crack0025 mean_dice 0.002991 mean_hd95 169.147120 iou 0.196880
+[14:59:02.577] idx 6 case crack0028 mean_dice 0.000563 mean_hd95 309.046594 iou 0.027105
+[14:59:02.641] idx 7 case crack0034 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:59:02.711] idx 8 case crack0037 mean_dice 0.000000 mean_hd95 0.000000 iou 0.000000
+[14:59:41.887] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[14:59:41.888] 830 test iterations per epoch
+[15:05:02.817] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:05:02.818] 830 test iterations per epoch
+[15:06:18.710] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:06:18.711] 830 test iterations per epoch
+[15:08:45.221] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:08:45.223] 830 test iterations per epoch
+[15:28:56.633] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:28:56.635] 830 test iterations per epoch
+[15:38:10.429] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:38:10.430] 830 test iterations per epoch
+[15:40:41.613] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:40:41.615] 830 test iterations per epoch
+[15:57:38.976] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[15:57:38.976] 830 test iterations per epoch
+[16:00:09.784] idx 0 case crack0002 mean_dice 0.000646 mean_hd95 177.476437 iou 0.000187
+[16:00:22.005] idx 1 case crack0003 mean_dice 0.000145 mean_hd95 308.648414 iou 0.000060
+[16:20:54.554] Namespace(ckpt='X:\\SAMed_fortest\\checkpoints\\sam_vit_b_01ec64.pth', config=None, dataset='Synapse', deterministic=1, img_size=512, input_size=224, is_savenii=False, list_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\lists\\data_list', lora_ckpt='checkpoints\\epoch_15.pth', module='sam_lora_image_encoder', num_classes=1, output_dir='X:\\SAMed_fortest\\SAM_for_crack_b\\test_output', rank=4, seed=1234, vit_name='vit_b', volume_path='X:\\SAMed_fortest\\test_dataset')
+[16:20:54.555] 830 test iterations per epoch

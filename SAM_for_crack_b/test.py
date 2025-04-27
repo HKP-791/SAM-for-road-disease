@@ -18,7 +18,7 @@ from icecream import ic
 import cv2
 
 
-class_to_name = {1: 'crack'}
+class_to_name = {1: 'crack', 2:'pothole', 3:'patch'}
 
 
 def inference(args, multimask_output, db_config, model, test_save_path=None):
@@ -26,7 +26,7 @@ def inference(args, multimask_output, db_config, model, test_save_path=None):
     testloader = DataLoader(db_test, batch_size=1, shuffle=False, num_workers=1)
     logging.info(f'{len(testloader)} test iterations per epoch')
     model.eval()
-    metric_list = 0.0
+    metric_list = []
     for i_batch, sampled_batch in tqdm(enumerate(testloader)):
         h, w = sampled_batch['image'].shape[2:]
         image, label, case_name = sampled_batch['image'], sampled_batch['label'], sampled_batch['case_name'][0]
@@ -39,20 +39,28 @@ def inference(args, multimask_output, db_config, model, test_save_path=None):
         metric_i = test_single_volume(image, label, model, classes=args.num_classes, multimask_output=multimask_output,
                                       patch_size=[args.img_size, args.img_size], input_size=[args.input_size, args.input_size],
                                       test_save_path=test_save_path, case=case_name, z_spacing=db_config['z_spacing'])
-        metric_list += np.array(metric_i)
-        logging.info('idx %d case %s mean_dice %f mean_hd95 %f' % (
-            i_batch, case_name, np.mean(metric_i, axis=0)[0], np.mean(metric_i, axis=0)[1]))
-    metric_list = metric_list / len(db_test)
+        for item in metric_i:
+            metric_list.append(item)
+        print(metric_i)
+        logging.info(f'idx {i_batch} case {case_name} mean_dice {np.mean(metric_i, axis=0)[0]} mean_hd95 {np.mean(metric_i, axis=0)[1]} iou {np.mean(metric_i, axis=0)[2]} mAP@{np.mean(metric_i, axis=0)[3]} {np.mean(metric_i, axis=0)[4]}')
+
+    metric_arr = np.array(metric_list)
     for i in range(1, args.num_classes + 1):
+        rows_with_label = metric_arr[metric_arr[:, -1] == i]
+        mean_result = np.mean(rows_with_label, axis=0)
         try:
-            logging.info('Mean class %d name %s mean_dice %f mean_hd95 %f' % (i, class_to_name[i], metric_list[i - 1][0], metric_list[i - 1][1]))
+            logging.info(f'Mean class {i} name {class_to_name[i]} mean_dice {mean_result[0]} mean_hd95{mean_result[1]} iou {mean_result[2]}')
         except:
-            logging.info('Mean class %d mean_dice %f mean_hd95 %f' % (i, metric_list[i - 1][0], metric_list[i - 1][1]))
+            logging.info(f'Mean class {i} mean_dice {mean_result[0]} mean_hd95{mean_result[1]} iou {mean_result[2]}')
+            logging.info('Mean class %d mean_dice %f mean_hd95 %f iou %f' % (i, mean_result[0], mean_result[1], mean_result[2]))
     performance = np.mean(metric_list, axis=0)[0]
     mean_hd95 = np.mean(metric_list, axis=0)[1]
-    logging.info(f'Testing performance in best val model: mean_dice : {performance} mean_hd95 : {mean_hd95}')
+    iou = np.mean(metric_list, axis=0)[2]
+    mAP = np.mean(metric_list, axis=0)[4]
+    logging.info(f'Testing performance in best val model: mean_dice : {performance} mean_hd95 : {mean_hd95} iou : {iou} mAP@{np.mean(metric_i, axis=0)[3]} {mAP}')
     logging.info("Testing Finished!")
     return 1
+
 
 
 def config_to_dict(config):
@@ -68,21 +76,21 @@ def config_to_dict(config):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str, default=None, help='The config file provided by the trained model')
-    parser.add_argument('--volume_path', type=str, default='testset/test_vol_h5/')
+    parser.add_argument('--volume_path', type=str, default='/home/lifeiyang/SAMed_fortest/testset/RDD_test')
     parser.add_argument('--dataset', type=str, default='Synapse', help='Experiment name')
-    parser.add_argument('--num_classes', type=int, default=1)
-    parser.add_argument('--list_dir', type=str, default='./lists/lists_Synapse/', help='list_dir')
-    parser.add_argument('--output_dir', type=str, default='/out_put')
+    parser.add_argument('--num_classes', type=int, default=3)
+    parser.add_argument('--list_dir', type=str, default='/home/lifeiyang/SAMed_fortest/SAMed_h/lists/lists_Synapse', help='list_dir')
+    parser.add_argument('--output_dir', type=str, default='/home/lifeiyang/SAMed_fortest/SAMed_h/test_output')
     parser.add_argument('--img_size', type=int, default=512, help='Input image size of the network')
     parser.add_argument('--input_size', type=int, default=224, help='The input size for training SAM model')
     parser.add_argument('--seed', type=int,
                         default=1234, help='random seed')
     parser.add_argument('--is_savenii', action='store_true', help='Whether to save results during inference')
     parser.add_argument('--deterministic', type=int, default=1, help='whether use deterministic training')
-    parser.add_argument('--ckpt', type=str, default='checkpoints/sam_vit_b_01ec64.pth',
+    parser.add_argument('--ckpt', type=str, default='/home/lifeiyang/SAMed_fortest/checkpoints/foundation_model/sam_vit_h_4b8939.pth',
                         help='Pretrained checkpoint')
-    parser.add_argument('--lora_ckpt', type=str, default='checkpoints\epoch_15.pth', help='The checkpoint from LoRA')
-    parser.add_argument('--vit_name', type=str, default='vit_b', help='Select one vit model')
+    parser.add_argument('--lora_ckpt', type=str, default='/home/lifeiyang/SAMed_fortest/checkpoints/RDD_model/best/epoch_119.pth', help='The checkpoint from LoRA')
+    parser.add_argument('--vit_name', type=str, default='vit_h', help='Select one vit model')
     parser.add_argument('--rank', type=int, default=4, help='Rank for LoRA adaptation')
     parser.add_argument('--module', type=str, default='sam_lora_image_encoder')
 

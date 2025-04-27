@@ -1,104 +1,93 @@
-# SAMed
-This repository contains the implementation of the following paper:
-> **Customized Segment Anything Model for Medical Image Segmentation**<br>
-> [Kaidong Zhang](https://hitachinsk.github.io/), and [Dong Liu](https://faculty.ustc.edu.cn/dongeliu/)<br>
-> Technical report<br>
-[\[Paper\]](https://arxiv.org/pdf/2304.13785.pdf)
+# SAM_for_road_disease道路病害检测模型
 
-Colab online demo: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KCS5ulpZasYl9DgJJn59WsGEB8vwSI_m?usp=sharing)
+## 1.项目介绍
 
-<img src="materials/teaser.png" height="140px"/> 
+本项目基于Segment Anything Model（SAM），应用LoRA低秩微调策略于SAM的图像编码器和解码器，使之能够更好的适应道路路面裂缝分割和检测任务。模型在训练中应用了预热微调和学习率指数衰减策略，以帮助模型在训练中下降的损失稳定并加速收敛。
+<img src="./materials/flowchart.png">
+我们提供了SAM_for_road_disease_b和SAM_for_road_disease_h两个版本的模型，b型版本的模型参数量较小但分割和检测的精度较低，h型版本的模型参数量较大但分割和检测的精度较高，下表展示了两个模型在CrackTree数据集上的表现
 
-## :star: News
-- Thanks to the high investment from my supevisor, I can finetune the `vit_h` version of SAM for more accurate medical image segmentation. Now, we release the `vit_h` version of SAMed (We denote this version as SAMed_h), and the comparison between SAMed and SAMed_h is shown in the table below.
+| Model | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
+|-|-|-|-|-|-|
+| SAM_for_road_disease_b | 0.334 | 106.849 | 0.215 | 0.117 | 0.054 |
+| SAM_for_road_disease_h | 0.692 | **10.814** | 0.658 | 0.322 | 0.271 |
 
-Model | DSC | HD | Aorta | Gallbladder | Kidney (L) | Kidney (R) | Liver | Pancreas | Spleen | Stomach
------------- | -------------|-----------|---------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
-SAMed | 81.88 | 20.64 | 87.77 | 69.11 | 80.45 | 79.95 | 94.80 | **72.17** | 88.72 | 82.06
-SAMed_h | **84.30** | **16.02** | **87.81** | **74.72** | **85.76** | **81.52** | **95.76** | 70.63 | **90.46** | **87.77**
-
-Without bells and whistles, SAMed_h achieves **much higher performance** than SAMed. Although the model size of `vit_h` version is much larger (above 2G) than `vit_b` version (~350M), the LoRA checkpoint of SAMed_h does not increase a lot (from 18M to 21M). Therefore, **the deployment and storage cost of SAMed_h is nearly on par with SAMed**. Since industry prefers to deploy larger and better performing models, we believe SAMed_h is more promising for computer-assisted diagnosis and preoperative planning in practice. For more details about SAMed_h, please visit [SAMed_h directory](SAMed_h/).
-
-## Overview
-<img src="materials/pipeline.png" height="260px"/> 
-We propose SAMed, a general solution for medical image segmentation. Different from the previous methods, SAMed is built upon the large-scale image segmentation model, Segment Anything Model (SAM), to explore the new research paradigm of customizing large-scale models for medical image segmentation. SAMed applies the low-rank-based (LoRA) finetuning strategy to the SAM image encoder and finetunes it together with the prompt encoder and the mask decoder on labeled medical image segmentation datasets. We also observe the warmup finetuning strategy and the AdamW optimizer lead SAMed to successful convergence and lower loss. Different from SAM, SAMed could perform semantic segmentation on medical images. Our trained SAMed model achieves 81.88 DSC and 20.64 HD on the Synapse multi-organ segmentation dataset, which is on par with the state-of-the-art methods. We conduct extensive experiments to validate the effectiveness of our design. Since SAMed only updates a small fraction of the SAM parameters, its deployment cost and storage cost are quite marginal in practical usage.
-
-## Todo list
-- [ ] Make a demo.
-- [ ] Finetune on more datasets
-- [ ] ~~Make SAMed based on `vit_l` or `vit_h` mode of SAM~~
-
-## Prerequisites
-- Linux (We tested our codes on Ubuntu 18.04)
-- Anaconda
-- Python 3.7.11
-- Pytorch 1.9.1
-
-To get started, first please clone the repo
+## 2.使用说明
+本项目的开发平台信息如下：
+- CentOS 7.9
+- Nvidia Tesla T4 16GB
+### 2.1 环境配置
+在终端中输入以下指令进行环境配置
+```bash
+conda create -n sam_for_RD python==3.8
 ```
-git clone https://github.com/hitachinsk/SAMed.git
-```
-Then, please run the following commands:
-```
-conda create -n SAMed python=3.7.11
-conda activate SAMed
+进入到项目根目录下输入以下指令进行依赖安装
+```bash
+cd SAM_for_road_disease
 pip install -r requirements.txt
 ```
+### 2.2 数据准备
+- 模型输入的数据集格式要求为.npz格式文件，每个.npz文件内含两个储存在字典类型中的键值对，键内容为`image`和`label`，值为键对应的图像和标签数据。
+- 图像数据为RGB三通道格式，标签数据为单通道的灰度图，背景像素定义为0，目标像素值依类别定义为标签数字值，图像储存为ndarray数据类型。
+- 图像大小尺寸无要求。
+- 我们提供了代码帮助制作训练和测试所需的数据集，内容请参考`./preprocess/preprocess_data.py`。
 
-If you have the raw Synapse dataset, we provide the [preprocess script](preprocess/) to process and normalize the data for training. Please refer this folder for more details.
-
-## Quick start
-We strongly recommand you to try our online demo [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KCS5ulpZasYl9DgJJn59WsGEB8vwSI_m?usp=sharing).
-
-Currently, we provide the SAMed and the SAMed_s models for reproducing our results quickly. The LoRA checkpoints and their corresponding configurations are shown in the table below.
-Model | Checkpoint | Configuration | DSC | HD
------------- | -------------|-----------|---------------|-------------
-SAMed | [Link](https://drive.google.com/file/d/1P0Bm-05l-rfeghbrT1B62v5eN-3A-uOr/view?usp=share_link) | [Cfg](https://drive.google.com/file/d/1pTXpymz3H6665hjztkv-A7uG_rzSWPVg/view?usp=sharing) | 81.88 | 20.64
-SAMed_s | [Link](https://drive.google.com/file/d/1rQM2md-h66RlRF3wC0m9N8aheOCvKfYv/view?usp=share_link) | [Cfg](https://drive.google.com/file/d/1x72rB-oNtZ-ZoD_yfOnWdowSb02FMUjT/view?usp=sharing) | 77.78 | 31.72
-
-Here are the instructions: 
-
-1. Change the directory to the rootdir of this repository.
-2. Please download the pretrained [SAM model](https://drive.google.com/file/d/1_oCdoEEu3mNhRfFxeWyRerOKt8OEUvcg/view?usp=share_link) (provided by the original repository of SAM) and the [LoRA checkpoint of SAMed](https://drive.google.com/file/d/1P0Bm-05l-rfeghbrT1B62v5eN-3A-uOr/view?usp=share_link). Put them in the `./checkpoints` folder.
-3. Please download the [testset](https://drive.google.com/file/d/1RczbNSB37OzPseKJZ1tDxa5OO1IIICzK/view?usp=share_link) and put it in the ./testset folder. Then, unzip and delete this file.
-4. Run this commend to test the performance of SAMed.
+### 2.3 训练
+将准备好的训练数据集和索引.txt文件放于项目根目录下，sam_vit基础模型要放置于目录`./checkpoints`下。对于sam_vit_b基础模型，在终端中输入以下指令进行训练
 ```bash
-python test.py --is_savenii --output_dir <Your output directory>
+python train.py --warmup --AdamW --root_path <Your training data path> --list_dir <Your list for training indexes> --output <Your output path> 
 ```
-If everything works, you can find the average DSC is 0.8188 (81.88) and HD is 20.64, which correspond to the Tab.1 of the paper. And check the test results in `<Your output directory>`.
-
-What's more, we also provide the [SAMed_s model](https://drive.google.com/file/d/1rQM2md-h66RlRF3wC0m9N8aheOCvKfYv/view?usp=share_link), which utilizes LoRA to finetune the transformer blocks in image encoder and mask decoder. Compared with SAMed, SAMed_s has smaller model size but the performance also drops slightly. If you want to use this model, download and put it in the `./checkpoints_s` folder and run the below command to test its performance.
+如果要同时训练模型的图像编码器和掩码解码器，输入
 ```bash
-python test.py --is_savenii --output_dir <Your output directory> --lora_ckpt checkpoints_s/epoch_159.pth --module sam_lora_image_encoder_mask_decoder
+python train.py --warmup --AdamW --root_path <Your training data path> --list_dir <Your list for training indexes> --output <Your output path> --module sam_lora_image_encoder_mask_decoder
 ```
-The average DSC is 0.7778 (77.78) and HD is 31.72 for SAMed_s, which corresponds to the Tab.3 of the paper. 
-
-## Training
-We use 2 RTX 3090 GPUs for training.
-1. Please download the processed [training set](https://drive.google.com/file/d/1zuOQRyfo0QYgjcU_uZs0X3LdCnAC2m3G/view?usp=share_link), whose resolution is `224x224`, and put it in `<Your folder>`. Then, unzip and delete this file. We also prepare the [training set](https://drive.google.com/file/d/1F42WMa80UpH98Pw95oAzYDmxAAO2ApYg/view?usp=share_link) with resolution `512x512` for reference, the `224x224` version of training set is downsampled from the `512x512` version.
-2. Run this command to train SAMed.
+对于sam_vit_h基础模型，其参数量较大因此需要更多的训练轮次以完成收敛。为获得更快的训练速度和更少的内存占用，我们采用了混合精度等方法进行训练。在终端中输入以下指令进行训练
 ```bash
-python train.py --root_path <Your folder> --output <Your output path> --warmup --AdamW 
-```
-Check the results in `<Your output path>`.
-
-## License
-This work is licensed under MIT license. See the [LICENSE](LICENSE) for details.
-
-## Citation
-If our work inspires your research or some part of the codes are useful for your work, please cite our paper:
-```bibtex
-@article{samed,
-  title={Customized Segment Anything Model for Medical Image Segmentation},
-  author={Kaidong Zhang, and Dong Liu},
-  journal={arXiv preprint arXiv:2304.13785},
-  year={2023}
-}
+python train.py --warmup --AdamW --root_path <Your training data path> --list_dir <Your list for training indexes> --output <Your output path> --tf32 --compile --use_amp
 ```
 
-## Contact
-If you have any questions, please contact us via 
-- richu@mail.ustc.edu.cn
+### 2.4 测试
+将训练好的LoRA放置于模型储存目录`./checkpoints`下，在终端中输入以下指令进行测试
+```bash
+python test.py --is_savenii --volume_path <Your test dataset path> --output_dir <Your test output directory> --lora_ckpt <path where your LoRA model checkpoints are>
+```
+如果你同时对图像编码器和掩码解码器进行了微调，请输入下面的指令进行测试
+```bash
+python test.py --is_savenii --volume_path <Your test dataset path> --output_dir <Your test output directory> --lora_ckpt <path where your LoRA model checkpoints are> --module sam_lora_image_encoder_mask_decoder
+```
 
-## Acknowledgement
-We appreciate the developers of [Segment Anything Model](https://github.com/facebookresearch/segment-anything) and the provider of the [Synapse multi-organ segmentation dataset](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789). The code of SAMed is built upon [TransUnet](https://github.com/Beckschen/TransUNet) and [SAM LoRA](https://github.com/JamesQFreeman/Sam_LoRA), and we express our gratitude to these awesome projects.
+## 3.分割模型在目标检测任务上的尝试
+为了探索分割模型在目标检测任务上拓展应用的可能性，我们还使用目标检测数据集RDD2022_CN对我们的SAM_for_road_disease模型进行了训练和测试。RDD2022_CN数据集的是方框（bounding box）标注而非精确的像素级掩码(mask)标注，这样的标注不符合SAM分割模型的训练输入格式，因此我们依照目标检测的方框标记制作了掩码标注图像，在掩码标注图像中，目标方框内的所有像素值被定义为类别标签值（如裂缝被定义为标签1，孔洞被定义为标签2）
+<img src="./materials/label_process.png">
+虽然将掩码标注图像中目标方框内的所有像素值被定义为类别标签值的方法轻易地实现了分割模型向目标检测任务上的拓展，但是模型在该数据集上的表现并不优异。这是由于该标注方法实际上属于粗略的像素级标注，其会在训练过程中给模型引入病害周围环境的噪声，导致模型学习到了大量与病害无关的特征，从而导致模型的训练损失一直居高不下极难收敛。对此我们在模型的训练过程中采用了热身和学习率指数衰减策略，即在模型训练初始的一段时间给予其较低的学习率，随着训练的进行，学习率达到一个最大值，而后开始指数衰减，帮助模型的训练损失收敛。下表展示的是两个模型在RDD2022_CN路面病害数据集上的表现
+
+- SAM_for_road_disease_b版本：
+  
+| Disease category | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
+|-|-|-|-|-|-|
+| Crack | 0.334 | 106.849 | 0.215 | 0.117 | 0.054 |
+| Pothole | 0.164 | **21.487** | 0.145 | 0.161 | 0.054 |
+| Patch | **0.339** | 89.170 | **0.313** | **0.289** | **0.154** |
+|Average | 0.334 | 99.082 | 0.229 | 0.151 | 0.072 |
+
+- SAM_for_road_disease_h版本：
+  
+| Disease category | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
+|-|-|-|-|-|-|
+| Crack | 0.576 | 84.670 | 0.429 | 0.416 | 0.205 |
+| Pothole | 0.327 | **23.465** | 0.296 | 0.429 | 0.193 |
+| Patch | **0.618** | 64.519 | **0.605** | **0.673** | **0.447** |
+| Average | 0.576 | 79.361 | 0.456 | 0.462 | 0.247|
+
+### 4.展望与改进
+RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照片中的大小占比只有很小的一部分，属于小目标检测任务。而SAM模型只能输出单一尺度的低分辨率特征图像，无法捕获到病害的细部特征，因此SAM模型在RDD2022_CN数据集上的检测表现较CrackTree差很多。为训练出能更好地适应该小目标检测的任务模型，可以参考CNN中的多尺度金字塔结构，将多个能输出不同分辨率transformer模块进行叠加组合，用于输出图像的多尺度特征。
+此外，SAM的visual transformer层采用的是固定分辨率的位置嵌入, 但是模型在测试的时候往往图片的分辨率不是固定的。SAM对此的解决方法是对位置嵌入做双线性插值，而这会损害性能,效率很低而且很不灵活。
+因此一种名为segformer的全新架构的视觉transformer被设计了出来，它包含以下特征：
+- 分层的金字塔结构，用于提取多重尺度下的目标特征
+- 一种新型的卷积位置编码器，避免了不同分辨率输入下的位置插值
+- 一个简洁有效的全连接多层感知机解码器
+
+我们同样对该模型进行了微调以使之适应到道路病害分割与检测的任务，该项目内容请见：[segformer_for_crack](https://github.com/HKP-791/Segformer-for-road-disease)
+
+### 5.作者
+[Ica_l](desprado233@163.com)
+使用开源库[SAM](https://github.com/facebookresearch/segment-anything)作为基础模型。

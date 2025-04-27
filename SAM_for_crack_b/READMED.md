@@ -1,62 +1,93 @@
-# SAM_for_crack模型
+# SAM_for_road_disease道路病害检测模型
 
 ## 1.项目介绍
-本项目基于Segment AnythingModel（SAM），应用LoRA低秩微调策略于SAM图像编码器和解码器的transformer模块，使之能够更好的适应道路路面裂缝分割和检测任务。模型在训练中应用了预热微调和学习率指数衰减策略，以使模型能更好地学习到裂缝的细部特征。我们提供了SAM_for_crack_b和SAM_for_crack_h两个版本的模型，这两个模型是分别以
-我们使用CrackTree数据集对这两个模型展开了训练和测试，训练集和测试集的划分比为8：2，最后得出的测试结果如下：
 
-由于基础模型的参数量不同，较多参数量sam_for_crack_h微调出的模型在裂缝分割和检测任务上取得了更好的效果，然而过大的参数使模型在实际部署中会受到一定限制。
-ROS2、Navigation2和Yolo设计了一个自动巡检机器人，该机器人在Gazebo仿真环境中运行。机器人可以依照设定的路点进行巡检，每到达一个路店时播放到达的目标点信息，同时车载的摄像头会实时检测是否发现目标物体，并在发现目标物体时进行数量统计、发音警告并拍照保存。小车具备静态和动态避障功能，且能够在受困时发音播报并脱困。
-我们发现，用不精确的掩膜标签一样，展现了SAM模型强大的泛化和全局特征捕捉能力。
+本项目基于Segment Anything Model（SAM），应用LoRA低秩微调策略于SAM的图像编码器和解码器，使之能够更好的适应道路路面裂缝分割和检测任务。模型在训练中应用了预热微调和学习率指数衰减策略，以帮助模型在训练中下降的损失稳定并加速收敛。
+<img src="../materials/flowchart.png">
+我们提供了SAM_for_road_disease_b和SAM_for_road_disease_h两个版本的模型，b型版本的模型参数量较小但分割和检测的精度较低，h型版本的模型参数量较大但分割和检测的精度较高，下表展示了两个模型在CrackTree数据集上的表现
 
-各功能包的功能如下:
-- rosmaster_x3:机器人描述文件，包含Gazebo仿真等相关配置
-- rosmaster_nav2:配置机器人导航运行所需的文件，包含Navigation2等导航配置文件
-- rosmaster_app：机器人巡检应用，包含到点播报、目标检测，拍照保存等功能
+| Model | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
+|-|-|-|-|-|-|
+| SAM_for_road_disease_b | 0.334 | 106.849 | 0.215 | 0.117 | 0.054 |
+| SAM_for_road_disease_h | 0.692 | **10.814** | 0.658 | 0.322 | 0.271 |
 
 ## 2.使用说明
-
 本项目的开发平台信息如下：
-
-- 操作系统：Ubuntu22.04
-- ROS版本：ROS2-Humble 
-
-### 2.1 安装
-
-本项目采用slam-toolbox，导航采用Navigation2，仿真采用Gazebo，运动控制采用ros2-control实现，在使用colcon build构建前请先安装依赖，指令如下：
-
-1.安装slam-toolbox和Navigation2
+- CentOS 7.9
+- Nvidia Tesla T4 16GB
+### 2.1 环境配置
+在终端中输入以下指令进行环境配置
 ```bash
-sudo apt install ros-$ROS_DISTRO-slam-toolbox ros-$ROS_DISTRO-nav2-bringup
+conda create -n sam_for_RD python==3.8
 ```
-2.安装仿真相关功能包
+进入到项目根目录下输入以下指令进行依赖安装
 ```bash
-sudo apt install ros-$ROS_DISTRO-robot-state-publisher ros-$ROS_DISTRO-joint-state-publisher ros-$ROS_DISTRO-gazebo-ros-pkgs ros-$ROS_DISTRO-gazebo-ros-controllers
+cd SAM_for_road_disease
+pip install -r requirements.txt
+```
+### 2.2 数据准备
+- 模型输入的数据集格式要求为.npz格式文件，每个.npz文件内含两个储存在字典类型中的键值对，键内容为`image`和`label`，值为键对应的图像和标签数据。
+- 图像数据为RGB三通道格式，标签数据为单通道的灰度图，背景像素定义为0，目标像素值依类别定义为标签数字值，图像储存为ndarray数据类型。
+- 图像大小尺寸无要求。
+- 我们提供了代码帮助制作训练和测试所需的数据集，内容请参考`./preprocess/preprocess_data.py`。
+
+### 2.3 训练
+将准备好的训练数据集和索引.txt文件放于项目根目录下，sam_vit基础模型要放置于目录`./checkpoints`下。对于sam_vit_b基础模型，在终端中输入以下指令进行训练
+```bash
+python train.py --warmup --AdamW --root_path <Your training data path> --list_dir <Your list for training indexes> --output <Your output path> 
+```
+如果要同时训练模型的图像编码器和掩码解码器，输入
+```bash
+python train.py --warmup --AdamW --root_path <Your training data path> --list_dir <Your list for training indexes> --output <Your output path> --module sam_lora_image_encoder_mask_decoder
+```
+对于sam_vit_h基础模型，其参数量较大因此需要更多的训练轮次以完成收敛。为获得更快的训练速度和更少的内存占用，我们采用了混合精度等方法进行训练。在终端中输入以下指令进行训练
+```bash
+python train.py --warmup --AdamW --root_path <Your training data path> --list_dir <Your list for training indexes> --output <Your output path> --tf32 --compile --use_amp
 ```
 
-
-1.第一次使用要在auto_parking目录下用colcon build编译一下，每次使用前要cd到auto_parking目录下source
-2.编写了两个.launch.py，分别用于启动rviz2和建立了世界的gazebo.可以通过下命令启动导入了无人机的rviz2和gazebo。
+### 2.4 测试
+将训练好的LoRA放置于模型储存目录`./checkpoints`下，在终端中输入以下指令进行测试
 ```bash
-ros2 launch rosmaster_x3 display_gazebo.launch.py
-ros2 launch rosmaster_x3 display_rviz2.launch.py
+python test.py --is_savenii --volume_path <Your test dataset path> --output_dir <Your test output directory> --lora_ckpt <path where your LoRA model checkpoints are>
 ```
-2.无人车的urdf描述文件和仿真世界的world文件位于位于
-```text
-/auto_parking/src/rosmaster_x3/urdf/rosmaster_x3.urdf
-/auto_parking/src/rosmaster_x3/world/auto_parking.world
-```
-3.安装语言合成和图像相关功能包
-
-4.目前无人车已经实现了普通相机、深度相机、激光雷达、imu惯性测量单元、tf里程记和键盘控制行进。不过现在的键盘控制还是以前轮转向后轮固定的方式运行。普通相机、深度相机、激光雷达、imu惯性测量单元、tf里程记的话题分别为
-```text
-/camera_sensor/image_raw
-/camera_sensor/depth/image_raw
-/scan
-/imu
-/odom
-```
-5.可以通过rviz2、rqt和gazegbo查看实时视频和雷达点云等数据（推荐rviz2）.操控小车移动可以通过调用节点进行控制
+如果你同时对图像编码器和掩码解码器进行了微调，请输入下面的指令进行测试
 ```bash
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
+python test.py --is_savenii --volume_path <Your test dataset path> --output_dir <Your test output directory> --lora_ckpt <path where your LoRA model checkpoints are> --module sam_lora_image_encoder_mask_decoder
 ```
-6.小车的转动惯量等物理特性还没做，等准备上代码训练的时候加。现在在做navigation2。
+
+## 3.分割模型在目标检测任务上的尝试
+为了探索分割模型在目标检测任务上拓展应用的可能性，我们还使用目标检测数据集RDD2022_CN对我们的SAM_for_road_disease模型进行了训练和测试。RDD2022_CN数据集的是方框（bounding box）标注而非精确的像素级掩码(mask)标注，这样的标注不符合SAM分割模型的训练输入格式，因此我们依照目标检测的方框标记制作了掩码标注图像，在掩码标注图像中，目标方框内的所有像素值被定义为类别标签值（如裂缝被定义为标签1，孔洞被定义为标签2）
+<img src="../materials/label_process.png">
+虽然将掩码标注图像中目标方框内的所有像素值被定义为类别标签值的方法轻易地实现了分割模型向目标检测任务上的拓展，但是模型在该数据集上的表现并不优异。这是由于该标注方法实际上属于粗略的像素级标注，其会在训练过程中给模型引入病害周围环境的噪声，导致模型学习到了大量与病害无关的特征，从而导致模型的训练损失一直居高不下极难收敛。对此我们在模型的训练过程中采用了热身和学习率指数衰减策略，即在模型训练初始的一段时间给予其较低的学习率，随着训练的进行，学习率达到一个最大值，而后开始指数衰减，帮助模型的训练损失收敛。下表展示的是两个模型在RDD2022_CN路面病害数据集上的表现
+
+- SAM_for_road_disease_b版本：
+  
+| Disease category | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
+|-|-|-|-|-|-|
+| Crack | 0.334 | 106.849 | 0.215 | 0.117 | 0.054 |
+| Pothole | 0.164 | **21.487** | 0.145 | 0.161 | 0.054 |
+| Patch | **0.339** | 89.170 | **0.313** | **0.289** | **0.154** |
+|Average | 0.334 | 99.082 | 0.229 | 0.151 | 0.072 |
+
+- SAM_for_road_disease_h版本：
+  
+| Disease category | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
+|-|-|-|-|-|-|
+| Crack | 0.576 | 84.670 | 0.429 | 0.416 | 0.205 |
+| Pothole | 0.327 | **23.465** | 0.296 | 0.429 | 0.193 |
+| Patch | **0.618** | 64.519 | **0.605** | **0.673** | **0.447** |
+| Average | 0.576 | 79.361 | 0.456 | 0.462 | 0.247|
+
+### 4.展望与改进
+RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照片中的大小占比只有很小的一部分，属于小目标检测任务。而SAM模型只能输出单一尺度的低分辨率特征图像，无法捕获到病害的细部特征，因此SAM模型在RDD2022_CN数据集上的检测表现较CrackTree差很多。为训练出能更好地适应该小目标检测的任务模型，可以参考CNN中的多尺度金字塔结构，将多个能输出不同分辨率transformer模块进行叠加组合，用于输出图像的多尺度特征。
+此外，SAM的visual transformer层采用的是固定分辨率的位置嵌入, 但是模型在测试的时候往往图片的分辨率不是固定的。SAM对此的解决方法是对位置嵌入做双线性插值，而这会损害性能,效率很低而且很不灵活。
+因此一种名为segformer的全新架构的视觉transformer被设计了出来，它包含以下特征：
+- 分层的金字塔结构，用于提取多重尺度下的目标特征
+- 一种新型的卷积位置编码器，避免了不同分辨率输入下的位置插值
+- 一个简洁有效的全连接多层感知机解码器
+
+我们同样对该模型进行了微调以使之适应到道路病害分割与检测的任务，该项目内容请见：[segformer_for_crack](https://github.com/HKP-791/Segformer-for-road-disease)
+
+### 5.作者
+[Ica_l](desprado233@163.com)
+使用开源库[SAM](https://github.com/facebookresearch/segment-anything)作为基础模型。
