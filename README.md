@@ -90,4 +90,3 @@ RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照�
 
 ### 5.作者
 [Ica_l](desprado233@163.com)
-使用开源库[SAM](https://github.com/facebookresearch/segment-anything)作为基础模型。
