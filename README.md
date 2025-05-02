@@ -2,14 +2,14 @@
 
 ## 1.项目介绍
 
-本项目基于Segment Anything Model（SAM），应用LoRA低秩微调策略于SAM的图像编码器和解码器，使之能够更好的适应道路路面裂缝分割和检测任务。模型在训练中应用了预热微调和学习率指数衰减策略，以帮助模型在训练中下降的损失稳定并加速收敛。
+本项目基于[Segment Anything Model](https://arxiv.org/abs/2304.02643)（SAM），应用LoRA低秩微调策略于SAM的图像编码器和解码器，使之能够更好的适应道路路面裂缝分割和检测任务。模型在训练中应用了预热微调和学习率指数衰减策略，以帮助模型在训练中下降的损失稳定并加速收敛。
 <img src="./materials/flowchart.png">
 我们提供了SAM_for_road_disease_b和SAM_for_road_disease_h两个版本的模型，b型版本的模型参数量较小但分割和检测的精度较低，h型版本的模型参数量较大但分割和检测的精度较高，下表展示了两个模型在CrackTree数据集上的表现
 
 | Model | mean_dice | mean_HD95 | mean_IOU | mAP@0.5 | mAP@0.5:0.95 |
 |-|-|-|-|-|-|
-| SAM_for_road_disease_b | 0.334 | 106.849 | 0.215 | 0.117 | 0.054 |
-| SAM_for_road_disease_h | 0.692 | **10.814** | 0.658 | 0.322 | 0.271 |
+| SAM_for_road_disease_b | 0.650 | 21.49 | 0.511 | 0.097 | 0.067 |
+| SAM_for_road_disease_h | **0.692** | **10.814** | **0.658** | **0.322** | **0.271** |
 
 ## 2.使用说明
 本项目的开发平台信息如下：
@@ -80,8 +80,9 @@ python test.py --is_savenii --volume_path <Your test dataset path> --output_dir 
 
 ### 4.展望与改进
 RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照片中的大小占比只有很小的一部分，属于小目标检测任务。而SAM模型只能输出单一尺度的低分辨率特征图像，无法捕获到病害的细部特征，因此SAM模型在RDD2022_CN数据集上的检测表现较CrackTree差很多。为训练出能更好地适应该小目标检测的任务模型，可以参考CNN中的多尺度金字塔结构，将多个能输出不同分辨率transformer模块进行叠加组合，用于输出图像的多尺度特征。
+
 此外，SAM的visual transformer层采用的是固定分辨率的位置嵌入, 但是模型在测试的时候往往图片的分辨率不是固定的。SAM对此的解决方法是对位置嵌入做双线性插值，而这会损害性能,效率很低而且很不灵活。
-因此一种名为segformer的全新架构的视觉transformer被设计了出来，它包含以下特征：
+因此一种基于视觉transformer的全新架构分割模型segformer被设计了出来，它包含以下特征：
 - 分层的金字塔结构，用于提取多重尺度下的目标特征
 - 一种新型的卷积位置编码器，避免了不同分辨率输入下的位置插值
 - 一个简洁有效的全连接多层感知机解码器
@@ -90,3 +91,20 @@ RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照�
 
 ### 5.作者
 [Ica_l](desprado233@163.com)
+参考项目来源：
+```
+@article{kirillov2023segany,
+  title={[Segment Anything](https://arxiv.org/abs/2304.02643)},
+  author={Kirillov, Alexander and Mintun, Eric and Ravi, Nikhila and Mao, Hanzi and Rolland, Chloe and Gustafson, Laura and Xiao, Tete and Whitehead, Spencer and Berg, Alexander C. and Lo, Wan-Yen and Doll{\'a}r, Piotr and Girshick, Ross},
+  journal={arXiv:2304.02643},
+  year={2023}
+}
+```
+```
+@article{samed,
+  title={[Customized Segment Anything Model for Medical Image Segmentation](https://arxiv.org/abs/2304.13785)},
+  author={Kaidong Zhang, and Dong Liu},
+  journal={arXiv preprint arXiv:2304.13785},
+  year={2023}
+}
+```

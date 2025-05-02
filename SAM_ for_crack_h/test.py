@@ -12,7 +12,7 @@ import torch.backends.cudnn as cudnn
 from utils import test_single_volume
 from importlib import import_module
 from segment_anything import sam_model_registry
-from datasets.dataset_synapse import Synapse_dataset
+from datasets.dataset_synapse import process_dataset
 
 from icecream import ic
 import cv2
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     dataset_name = args.dataset
     dataset_config = {
         'Synapse': {
-            'Dataset': Synapse_dataset,
+            'Dataset': process_dataset,
             'volume_path': args.volume_path,
             'list_dir': args.list_dir,
             'num_classes': args.num_classes,

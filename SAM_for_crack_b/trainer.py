@@ -30,7 +30,7 @@ def worker_init_fn(worker_id):
     random.seed(1234 + worker_id)
 
 def trainer_synapse(args, model, snapshot_path, multimask_output, low_res):
-    from datasets.dataset_synapse import Synapse_dataset, RandomGenerator
+    from datasets.dataset_synapse import process_dataset, RandomGenerator
     logging.basicConfig(filename=snapshot_path + "/log.txt", level=logging.INFO,
                         format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')
     logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
@@ -39,7 +39,7 @@ def trainer_synapse(args, model, snapshot_path, multimask_output, low_res):
     num_classes = args.num_classes
     batch_size = args.batch_size * args.n_gpu
     # max_iterations = args.max_iterations
-    db_train = Synapse_dataset(base_dir=args.root_path, list_dir=args.list_dir, split="train",
+    db_train = process_dataset(base_dir=args.root_path, list_dir=args.list_dir, split="train",
                                transform=transforms.Compose(
                                    [RandomGenerator(output_size=[args.img_size, args.img_size], low_res=[low_res, low_res])]))
     print("The length of train set is: {}".format(len(db_train)))
