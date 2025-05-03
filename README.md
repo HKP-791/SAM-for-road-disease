@@ -90,7 +90,11 @@ RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照�
 我们同样对该模型进行了微调以使之适应到道路病害分割与检测的任务，该项目内容请见：[segformer_for_crack](https://github.com/HKP-791/Segformer-for-road-disease)
 
 ### 5.作者
-[Ica_l](desprado233@163.com)
+- Ica_l
+- 邮箱地址 : [desprado233@163.com](desprado233@163.com)
+- Github : [HKP-791](https://github.com/HKP-791)
+  
+### 6.参考
 参考项目来源：
 ```
 @article{kirillov2023segany,
