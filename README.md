@@ -78,6 +78,8 @@ python test.py --is_savenii --volume_path <Your test dataset path> --output_dir 
 | Patch | **0.618** | 64.519 | **0.605** | **0.673** | **0.447** |
 | Average | 0.576 | 79.361 | 0.456 | 0.462 | 0.247|
 
+<img src="materials\samples.png">
+
 ### 4.展望与改进
 RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照片中的大小占比只有很小的一部分，属于小目标检测任务。而SAM模型只能输出单一尺度的低分辨率特征图像，无法捕获到病害的细部特征，因此SAM模型在RDD2022_CN数据集上的检测表现较CrackTree差很多。为训练出能更好地适应该小目标检测的任务模型，可以参考CNN中的多尺度金字塔结构，将多个能输出不同分辨率transformer模块进行叠加组合，用于输出图像的多尺度特征。
 
@@ -87,7 +89,7 @@ RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照�
 - 一种新型的卷积位置编码器，避免了不同分辨率输入下的位置插值
 - 一个简洁有效的全连接多层感知机解码器
 
-我们同样对该模型进行了微调以使之适应到道路病害分割与检测的任务，该项目内容请见：[segformer_for_crack](https://github.com/HKP-791/Segformer-for-road-disease)
+我们同样对该模型进行了微调以使之适应到道路病害分割与检测的任务，该项目内容请见：[segformer_for_road_disease](https://github.com/HKP-791/Segformer-for-road-disease)
 
 ### 5.作者
 - Ica_l
