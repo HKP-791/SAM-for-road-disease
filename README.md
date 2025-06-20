@@ -97,6 +97,9 @@ RDD2022_CN数据集的照片采集视角为远距离全景拍摄，病害在照�
 - Github : [HKP-791](https://github.com/HKP-791)
   
 ### 6.参考
+
+该代码基于[SAM](https://github.com/facebookresearch/segment-anything)、[SAMed](https://github.com/hitachinsk/SAMed), 感谢作者们的出色工作！
+
 参考项目来源：
 ```
 @article{kirillov2023segany,
